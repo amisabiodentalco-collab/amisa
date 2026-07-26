@@ -34,6 +34,11 @@ body{
 }
 html{overflow-x:hidden;width:100%;}
 .page{background:var(--navy);}
+#p-education{background:#122018;--gold:#D4AF37;--gold2:#E1C15A;}
+#p-education .sec{background:#15251C;}
+#p-education .callout-box{background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border-color:rgba(212,175,55,0.25);}
+#p-education .topic-pill{border-left-color:rgba(212,175,55,0.35);background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);}
+#p-education .topic-pill:hover{background:rgba(32,51,40,0.65);color:var(--white);}
 
 /* ── AMBIENT CANVAS ── */
 #ambient{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.28;}
@@ -1256,12 +1261,8 @@ footer{
 
         <!-- ── UPCOMING SERIES — matching hero card style ── -->
         <div class="r d1">
-          <!-- Persian bar -->
-          <div style="background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));text-align:center;padding:11px 24px;font-size:14px;color:#141414;font-weight:700;letter-spacing:0.04em;direction:rtl;border-radius:4px 4px 0 0;font-family:'Inter',Tahoma,sans-serif;">
-            آمیسا، نخستین مرجع تخصصی آموزش دندانپزشکی به زبان پارسی در استان بریتیش کلمبیا
-          </div>
-          <div style="background:linear-gradient(160deg,#0d1e36 0%,#091525 60%,#050f1e 100%);border:1px solid rgba(212,175,112,0.22);border-top:none;border-radius:0 0 8px 8px;padding:32px 36px;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:60%;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,112,0.4),transparent);"></div>
+          <div style="background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.25);border-radius:8px;padding:32px 36px;position:relative;overflow:hidden;">
+            <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:60%;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,0.4),transparent);"></div>
             <div style="position:absolute;bottom:0;right:0;width:200px;height:200px;background:radial-gradient(circle at bottom right,rgba(201,168,76,0.08) 0%,transparent 70%);pointer-events:none;"></div>
 
             <!-- Title + badge row -->
@@ -1271,18 +1272,18 @@ footer{
                 <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1.2;color:var(--white);">The <em style="color:var(--gold2);font-style:italic;">Art &amp; Science</em> of<br>Implant Restorative and Surgical Concepts</div>
                 <div style="width:48px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2));margin-top:14px;border-radius:1px;"></div>
               </div>
-              <div style="border:1px solid rgba(212,175,112,0.45);border-radius:6px;padding:12px 18px;background:rgba(212,175,112,0.07);min-width:160px;position:relative;flex-shrink:0;text-align:left;">
+              <div style="border:1px solid rgba(212,175,55,0.45);border-radius:6px;padding:12px 18px;background:rgba(212,175,55,0.07);min-width:160px;position:relative;flex-shrink:0;text-align:left;">
                 <div style="position:absolute;top:-9px;left:14px;background:var(--gold);color:#141414;font-size:8px;font-weight:700;letter-spacing:0.14em;padding:2px 8px;border-radius:2px;">UPCOMING</div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--gold2);line-height:1.1;margin-bottom:4px;">June 21, 2026</div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--white);line-height:1.3;margin-bottom:6px;">Session II · Implant<br>Restorations &amp; Surgery</div>
-                <div style="font-size:10px;color:rgba(212,175,112,0.6);letter-spacing:0.07em;">3 Instructional Hours</div>
+                <div style="font-size:10px;color:rgba(212,175,55,0.6);letter-spacing:0.07em;">3 Instructional Hours</div>
               </div>
             </div>
 
             <!-- Sessions list -->
             <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:24px;">
 
-              <div class="sess-row" style="display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:16px;background:rgba(212,175,112,0.06);border:1px solid rgba(212,175,112,0.45);border-radius:6px;padding:13px 18px;">
+              <div class="sess-row" style="display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:16px;background:rgba(32,51,40,0.55);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.45);border-radius:6px;padding:13px 18px;">
                 <div style="font-family:'Cormorant Garamond',serif;font-size:12px;font-weight:600;color:var(--gold);">04</div>
                 <div>
                   <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);line-height:1.2;">Implant Restorations &amp; Surgery</div>
@@ -1291,7 +1292,7 @@ footer{
                 <div style="font-size:9px;letter-spacing:0.12em;color:#141414;background:linear-gradient(90deg,var(--gold),var(--gold2));padding:4px 11px;border-radius:2px;text-transform:uppercase;white-space:nowrap;font-weight:700;">Session IV</div>
               </div>
 
-              <div class="sess-row" style="display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(212,175,112,0.27);border-radius:6px;padding:13px 18px;">
+              <div class="sess-row" style="display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.25);border-radius:6px;padding:13px 18px;">
                 <div style="font-family:'Cormorant Garamond',serif;font-size:12px;font-weight:600;color:var(--gold);">02</div>
                 <div>
                   <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);line-height:1.2;">Implant Restorations &amp; Surgery</div>
@@ -1300,7 +1301,7 @@ footer{
                 <div style="font-size:9px;letter-spacing:0.12em;color:#141414;background:linear-gradient(90deg,var(--gold),var(--gold2));padding:4px 11px;border-radius:2px;text-transform:uppercase;white-space:nowrap;font-weight:700;">Session II</div>
               </div>
 
-              <div class="sess-row" style="display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(212,175,112,0.27);border-radius:6px;padding:13px 18px;">
+              <div class="sess-row" style="display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.25);border-radius:6px;padding:13px 18px;">
                 <div style="font-family:'Cormorant Garamond',serif;font-size:12px;font-weight:600;color:var(--gold);">03</div>
                 <div>
                   <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);line-height:1.2;">Implant Restorations &amp; Surgery</div>
@@ -1309,11 +1310,11 @@ footer{
                 <div style="font-size:9px;letter-spacing:0.12em;color:#141414;background:linear-gradient(90deg,var(--gold),var(--gold2));padding:4px 11px;border-radius:2px;text-transform:uppercase;white-space:nowrap;font-weight:700;">Session III</div>
               </div>
 
-              <div class="sess-row" style="display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:16px;background:rgba(212,175,112,0.05);border:1px dashed rgba(212,175,112,0.4);border-radius:6px;padding:13px 18px;">
+              <div class="sess-row" style="display:grid;grid-template-columns:32px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px dashed rgba(212,175,55,.4);border-radius:6px;padding:13px 18px;">
                 <div style="color:var(--gold2);display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l1.7 6.8L21 10.5l-6.5 2L12 20l-1.7-6.8L3 10.5l7.3-1.7z"/></svg></div>
                 <div>
                   <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--gold2);line-height:1.2;">Free Attendance</div>
-                  <div style="font-size:11px;color:rgba(212,175,112,0.55);letter-spacing:0.07em;margin-top:3px;">Non-CE Participants &amp; Dental Students</div>
+                  <div style="font-size:11px;color:rgba(212,175,55,0.55);letter-spacing:0.07em;margin-top:3px;">Non-CE Participants &amp; Dental Students</div>
                 </div>
                 <div style="font-size:9px;letter-spacing:0.12em;color:var(--gold2);border:1px solid var(--gold2);padding:4px 11px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">FREE</div>
               </div>
@@ -1322,36 +1323,36 @@ footer{
 
             <!-- Pricing + Register -->
             <div class="price-row" style="display:flex;gap:12px;align-items:stretch;margin-bottom:20px;">
-              <div style="flex:1;border:1px solid rgba(212,175,112,0.3);border-radius:6px;padding:16px;text-align:center;background:rgba(255,255,255,0.02);">
+              <div style="flex:1;border:1px solid rgba(212,175,55,.25);border-radius:6px;padding:16px;text-align:center;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);">
                 <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:var(--gold2);line-height:1;">$150</div>
-                <div style="font-size:10px;color:rgba(212,175,112,0.5);letter-spacing:0.12em;text-transform:uppercase;margin-top:5px;">Per Session</div>
+                <div style="font-size:10px;color:rgba(212,175,55,0.5);letter-spacing:0.12em;text-transform:uppercase;margin-top:5px;">Per Session</div>
               </div>
-              <div style="flex:1;border:1px solid var(--gold);border-radius:6px;padding:16px;text-align:center;background:rgba(212,175,112,0.07);position:relative;">
+              <div style="flex:1;border:1px solid var(--gold);border-radius:6px;padding:16px;text-align:center;background:rgba(32,51,40,0.55);backdrop-filter:blur(8px);position:relative;">
                 <div style="position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:var(--gold);color:#141414;font-size:8px;font-weight:700;letter-spacing:0.14em;padding:2px 8px;border-radius:2px;white-space:nowrap;">BEST VALUE</div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:700;color:var(--gold2);line-height:1;">$390</div>
-                <div style="font-size:10px;color:rgba(212,175,112,0.5);letter-spacing:0.12em;text-transform:uppercase;margin-top:5px;">Full Series Bundle</div>
+                <div style="font-size:10px;color:rgba(212,175,55,0.5);letter-spacing:0.12em;text-transform:uppercase;margin-top:5px;">Full Series Bundle</div>
               </div>
-              <a href="https://pci.jotform.com/form/261402366100038" target="_blank" rel="noopener" style="flex:1.5;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));background-size:200% auto;color:#141414;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;border-radius:6px;box-shadow:0 4px 20px rgba(212,175,112,0.3);transition:background-position 0.4s,box-shadow 0.3s;line-height:1.5;">
+              <a href="https://pci.jotform.com/form/261402366100038" target="_blank" rel="noopener" style="flex:1.5;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));background-size:200% auto;color:#141414;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;border-radius:6px;box-shadow:0 4px 20px rgba(212,175,55,0.3);transition:background-position 0.4s,box-shadow 0.3s;line-height:1.5;">
                 Register Now →
               </a>
             </div>
 
             <!-- Info strip -->
-            <div style="display:flex;align-items:center;justify-content:space-around;background:rgba(212,175,112,0.05);border:1px solid rgba(212,175,112,0.27);border-radius:6px;padding:12px 20px;gap:12px;flex-wrap:wrap;">
-              <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,112,0.7);">📍 <strong style="color:var(--gold2);font-weight:400;">Vancouver, BC</strong></div>
-              <div style="width:1px;height:20px;background:rgba(212,175,112,0.15);"></div>
-              <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,112,0.7);">🌐 <strong style="color:var(--gold2);font-weight:400;">Live Online Worldwide</strong></div>
-              <div style="width:1px;height:20px;background:rgba(212,175,112,0.15);"></div>
-              <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,112,0.7);">💬 <strong style="color:var(--gold2);font-weight:400;">Persian + English Subtitles</strong></div>
-              <div style="width:1px;height:20px;background:rgba(212,175,112,0.15);"></div>
-              <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,112,0.7);">🎓 <strong style="color:var(--gold2);font-weight:400;">Free</strong> for Students</div>
+            <div style="display:flex;align-items:center;justify-content:space-around;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.25);border-radius:6px;padding:12px 20px;gap:12px;flex-wrap:wrap;">
+              <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,55,0.7);">📍 <strong style="color:var(--gold2);font-weight:400;">Vancouver, BC</strong></div>
+              <div style="width:1px;height:20px;background:rgba(212,175,55,0.15);"></div>
+              <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,55,0.7);">🌐 <strong style="color:var(--gold2);font-weight:400;">Live Online Worldwide</strong></div>
+              <div style="width:1px;height:20px;background:rgba(212,175,55,0.15);"></div>
+              <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,55,0.7);">💬 <strong style="color:var(--gold2);font-weight:400;">Persian + English Subtitles</strong></div>
+              <div style="width:1px;height:20px;background:rgba(212,175,55,0.15);"></div>
+              <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,55,0.7);">🎓 <strong style="color:var(--gold2);font-weight:400;">Free</strong> for Students</div>
             </div>
 
-            <div style="font-size:10.5px;color:rgba(212,175,112,0.55);text-align:center;margin-top:14px;line-height:1.6;">Certificate of attendance available. Participants are responsible for confirming continuing education eligibility with their own licensing authority.</div>
+            <div style="font-size:10.5px;color:rgba(212,175,55,0.55);text-align:center;margin-top:14px;line-height:1.6;">Certificate of attendance available. Participants are responsible for confirming continuing education eligibility with their own licensing authority.</div>
 
             <!-- Bottom note -->
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px;">
-              <div style="font-size:10px;color:rgba(212,175,112,0.3);letter-spacing:0.1em;text-transform:uppercase;">amisabiodental.ca</div>
+              <div style="font-size:10px;color:rgba(212,175,55,0.3);letter-spacing:0.1em;text-transform:uppercase;">amisabiodental.ca</div>
               <div style="font-family:'Cormorant Garamond',serif;font-size:12px;color:var(--gold);letter-spacing:0.18em;">AMISA · 2026</div>
             </div>
           </div>
@@ -1362,41 +1363,41 @@ footer{
           <div style="font-size:10px;letter-spacing:0.38em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:12px;"><span style="width:20px;height:1px;background:var(--gold);display:inline-block;"></span>Past Lectures</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
 
-            <div style="display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(212,175,112,0.22);border-radius:6px;padding:14px 20px;">
+            <div style="display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.25);border-radius:6px;padding:14px 20px;">
               <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--gold);text-align:center;line-height:1.4;">May 10<br><span style="font-size:11px;color:var(--gray);">2025</span></div>
               <div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);line-height:1.2;">Vancouver Lecture</div>
                 <div style="font-size:11px;color:var(--gray);margin-top:3px;">📍 Vancouver, BC &nbsp;·&nbsp; 💬 Persian</div>
               </div>
-              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,112,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">3 Hrs</div>
+              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,55,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">3 Hrs</div>
             </div>
 
-            <div style="display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(212,175,112,0.22);border-radius:6px;padding:14px 20px;">
+            <div style="display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.25);border-radius:6px;padding:14px 20px;">
               <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--gold);text-align:center;line-height:1.4;">Mar 1<br><span style="font-size:11px;color:var(--gray);">2025</span></div>
               <div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);line-height:1.2;">Restoring Severely Damaged Endodontically Treated Teeth</div>
                 <div style="font-size:11px;color:var(--gray);margin-top:3px;">📍 Vancouver, BC &nbsp;·&nbsp; 💬 Persian</div>
               </div>
-              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,112,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">2.5 Hrs</div>
+              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,55,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">2.5 Hrs</div>
             </div>
 
-            <div style="display:grid;grid-template-columns:64px 100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(212,175,112,0.22);border-radius:6px;padding:14px 20px;">
-              <img loading="lazy" decoding="async" src="images/lec-ai-guest.jpg" alt="AmisA Nov 23 session — guest segment" style="width:64px;height:64px;border-radius:5px;object-fit:cover;border:1px solid rgba(212,175,112,0.3);">
+            <div style="display:grid;grid-template-columns:64px 100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.25);border-radius:6px;padding:14px 20px;">
+              <img loading="lazy" decoding="async" src="images/lec-ai-guest.jpg" alt="AmisA Nov 23 session — guest segment" style="width:64px;height:64px;border-radius:5px;object-fit:cover;border:1px solid rgba(212,175,55,0.3);">
               <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--gold);text-align:center;line-height:1.4;">Nov 23<br><span style="font-size:11px;color:var(--gray);">2025</span></div>
               <div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);line-height:1.2;">2nd Semi-Prep Ceramic Veneers</div>
                 <div style="font-size:11px;color:var(--gray);margin-top:3px;">📍 West Van Memorial Library &nbsp;·&nbsp; 💬 Persian</div>
               </div>
-              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,112,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">Seminar</div>
+              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,55,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">Seminar</div>
             </div>
 
-            <div style="display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(212,175,112,0.22);border-radius:6px;padding:14px 20px;">
+            <div style="display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border:1px solid rgba(212,175,55,.25);border-radius:6px;padding:14px 20px;">
               <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--gold);text-align:center;line-height:1.4;">Aug 24<br><span style="font-size:11px;color:var(--gray);">2025</span></div>
               <div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);line-height:1.2;">Semi-Prep Ceramic Veneers — Get to Know These Miracles</div>
                 <div style="font-size:11px;color:var(--gray);margin-top:3px;">📍 Vancouver, BC &nbsp;·&nbsp; 💬 Persian</div>
               </div>
-              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gold2);border:1px solid rgba(212,175,112,0.3);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">FREE</div>
+              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gold2);border:1px solid rgba(212,175,55,0.3);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">FREE</div>
             </div>
 
           </div>
