@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AmisA Biodental Co. — Premium Digital Dentistry</title>
+<title>AmisA Biodental Co. — Digital Workflow, Education &amp; Laboratory Case Coordination</title>
 <link rel="icon" type="image/png" href="images/logo.png">
 <link rel="apple-touch-icon" href="images/logo.png">
-<meta name="description" content="AmisA Biodental Co. is a Canadian digital dental laboratory delivering esthetic restorations, digital workflows, education, and international partnership opportunities.">
-<meta property="og:title" content="AmisA Biodental Co. — Premium Digital Dentistry">
-<meta property="og:description" content="Canadian digital dental laboratory focused on esthetic restorations, digital workflows, and professional support for dentists and dental clinics.">
+<meta name="description" content="AmisA Biodental Co. provides professional dental education, digital workflow support, and business-to-business dental laboratory case coordination for licensed dental professionals, with international partnership opportunities.">
+<meta property="og:title" content="AmisA Biodental Co. — Digital Workflow, Education &amp; Laboratory Case Coordination">
+<meta property="og:description" content="Canadian company providing digital workflow support, professional dental education, and business-to-business laboratory case coordination for dentists and dental practices.">
 <meta property="og:image" content="images/logo.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
@@ -435,7 +435,7 @@ h2.sh em{font-style:italic;color:var(--gold2);} h1.sh{font-family:'Cormorant Gar
 .cs-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5.5vw,72px);font-weight:300;color:var(--white);}
 .cs-sub{font-size:15px;color:var(--gray);max-width:460px;line-height:1.85;}
 
-/* CONSULTATION */
+/* LABORATORY CASE COMMUNICATION */
 .con-layout{display:grid;grid-template-columns:0.9fr 1fr;gap:60px;align-items:start;margin-top:48px;}
 .method-card{
   display:flex;align-items:center;gap:16px;
@@ -463,7 +463,6 @@ footer{
 
 /* FULL PAGE IMAGE */
 .full-img{width:100%;display:block;border-top:0.5px solid rgba(212,175,112,0.19);}
-
 
 /* ── MOBILE RESPONSIVE ── */
 @media (max-width: 768px) {
@@ -498,7 +497,6 @@ footer{
   .hm-num{font-size:36px!important;}
   .hero-right{height:auto!important;padding-top:0;}
   .hero-right .pp-visual{height:auto!important;aspect-ratio:16/9!important;}
-
   /* Services grid — 1 col */
   .svc-grid{grid-template-columns:1fr!important;}
   .svc-header{grid-template-columns:1fr!important;gap:16px;}
@@ -523,7 +521,7 @@ footer{
   /* Club tiers — 1 col */
   .tier-grid{grid-template-columns:1fr!important;}
 
-  /* Consultation — 1 col */
+  /* Laboratory Case Communication — 1 col */
   .con-layout{grid-template-columns:1fr!important;gap:32px;}
 
   /* Scroll indicator — hide on mobile */
@@ -628,6 +626,9 @@ footer{
 
 /* Compensation section */
 .comp-note{margin-top:22px;font-size:12.5px;letter-spacing:0.06em;color:var(--gray2);}
+
+/* Regulatory footer notice */
+.reg-notice{max-width:760px;margin:0 auto 16px;padding:0 5%;font-size:11.5px;line-height:1.7;letter-spacing:0.02em;color:var(--gray2);text-align:center;}
 
 /* ══════════ HOMEPAGE PARTNERSHIP EXPERIENCE ══════════ */
 
@@ -738,7 +739,6 @@ footer{
   p,.svc-text,.method-sub,.team-bio{color:#c4c4c4 !important;}
   h1.sh,h2.sh{color:#ffffff !important;}
   .eyebrow-txt{color:#e8c989 !important;}
-
 }
 </style>
 </head>
@@ -760,11 +760,10 @@ footer{
     <a onclick="go('home')" id="n-home" class="nav-item active" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1v-9"/></svg><span>Home</span></a>
     <a onclick="go('education')" id="n-education" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M7 11v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/></svg><span>Education</span></a>
     <a onclick="go('lab')" id="n-lab" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6L4 19a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-11V2"/><path d="M9 2h6"/><path d="M7.5 15.5h9"/></svg><span>Lab</span></a>
-    <a onclick="go('clinic')" id="n-clinic" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5L12 4l8 5.5V21H4z"/><path d="M10 21v-5h4v5"/><path d="M12 8v3.5M10.25 9.75h3.5"/></svg><span>Clinic</span></a>
     <a onclick="go('gallery')" id="n-gallery" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16.5l-5-5-4.5 4.5-2-2-5.5 5.5"/></svg><span>Gallery</span></a>
     <a onclick="go('club')" id="n-club" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.6 5.5 6 .6-4.5 4 1.3 5.9-5.4-3.1-5.4 3.1 1.3-5.9-4.5-4 6-.6z"/></svg><span>Club</span></a>
     <a onclick="go('products')" id="n-products" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1.3 13.5H4.7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span>Products</span></a>
-    <a onclick="go('consultation')" id="n-consultation" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L4 20l1.2-4.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span>Consultation</span></a>
+    <a onclick="go('consultation')" id="n-consultation" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L4 20l1.2-4.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span>Lab Communication</span></a>
     <a onclick="go('partnership')" id="n-partnership" class="nav-item" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg><span>Partnership</span></a>
   </div>
   <button id="menu-btn" onclick="toggleFullMenu()" aria-label="Open menu">
@@ -777,14 +776,13 @@ footer{
   <a onclick="go('home');closeFullMenu()" href="#">Home</a>
   <a onclick="go('education');closeFullMenu()" href="#">Education</a>
   <a onclick="go('lab');closeFullMenu()" href="#">Lab</a>
-  <a onclick="go('clinic');closeFullMenu()" href="#">Clinic</a>
   <a onclick="go('gallery');closeFullMenu()" href="#">Gallery</a>
   <a onclick="go('club');closeFullMenu()" href="#">Club</a>
   <a onclick="go('products');closeFullMenu()" href="#">Products</a>
-  <a onclick="go('consultation');closeFullMenu()" href="#">Consultation</a>
+  <a onclick="go('consultation');closeFullMenu()" href="#">Lab Communication</a>
   <a onclick="go('partnership');closeFullMenu()" href="#">Partnership</a>
   <div class="menu-panel-div"></div>
-  <a onclick="go('lab');closeFullMenu()" href="#" class="menu-panel-cta">Submit a Lab Case</a>
+  <a onclick="go('lab');closeFullMenu()" href="#" class="menu-panel-cta">Submit a Laboratory Case</a>
   <a onclick="goContact();closeFullMenu()" href="#">Contact</a>
 </div>
 
@@ -828,10 +826,10 @@ footer{
           <span class="hero-kicker-txt">Vancouver, BC · Global Reach · Est. 2024</span>
         </div>
         <h2 class="sh" style="font-size:clamp(34px,4vw,52px);">Be Your <em>Best Self</em></h2>
-        <p class="sp" style="margin-bottom:28px;">At AmisA Biodental Co., we combine digital precision with artistic vision — ultra-thin ceramic veneers, advanced smile design, and premium continuing education for modern dentists.</p>
+        <p class="sp" style="margin-bottom:28px;">At AmisA Biodental Co., we combine digital precision with artistic vision — supporting dental professionals through digital workflows, coordinated laboratory production and professional education.</p>
         <div class="hero-actions" style="margin-bottom:36px;">
           <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"><span>Explore Services</span></button>
-          <button class="btn btn-ghost" onclick="go('lab')">Submit a Lab Case →</button>
+          <button class="btn btn-ghost" onclick="go('lab')">Submit a Laboratory Case →</button>
         </div>
         <div class="hero-metrics">
           <div class="hm"><span class="hm-num">1</span><span class="hm-label">Brand</span></div>
@@ -840,7 +838,7 @@ footer{
           <div class="hm-sep"></div>
           <div class="hm"><span class="hm-num">∞</span><span class="hm-label">Possibilities</span></div>
           <div class="hm-sep"></div>
-          <div class="hm"><span class="hm-num">12</span><span class="hm-label">CE Credits</span></div>
+          <div class="hm"><span class="hm-num">12</span><span class="hm-label">Instructional Hours</span></div>
         </div>
       </div>
     </div>
@@ -874,7 +872,7 @@ footer{
         <div>
           <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Overview · The Role</span></div>
           <h2 class="sh" style="font-size:clamp(32px,3.6vw,46px);">What Partners <em>Do</em></h2>
-          <p class="sp" style="margin-bottom:14px;">Partners connect local dentists with AmisA's Canadian digital dental laboratory for services including:</p>
+          <p class="sp" style="margin-bottom:14px;">Partners connect local dentists with AmisA's digital workflow and laboratory case coordination services, including:</p>
           <div style="display:flex;flex-direction:column;gap:9px;">
             <div style="display:flex;align-items:flex-start;gap:14px;"><div style="color:var(--gold);flex-shrink:0;display:flex;align-items:center;padding-top:3px;"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2l1.7 6.8L21 10.5l-6.5 2L12 20l-1.7-6.8L3 10.5l7.3-1.7z"/></svg></div><div style="font-size:15.5px;color:var(--gray);line-height:1.85;">Veneers</div></div>
             <div style="display:flex;align-items:flex-start;gap:14px;"><div style="color:var(--gold);flex-shrink:0;display:flex;align-items:center;padding-top:3px;"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2l1.7 6.8L21 10.5l-6.5 2L12 20l-1.7-6.8L3 10.5l7.3-1.7z"/></svg></div><div style="font-size:15.5px;color:var(--gray);line-height:1.85;">Zirconia restorations</div></div>
@@ -967,7 +965,7 @@ footer{
         <div class="svc-card r d2"><div class="svc-num">02</div><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 5.5 6 .5-4.5 4 1.3 5.9L12 15l-5.2 2.9 1.3-5.9-4.5-4 6-.5z"/></svg></div><div class="svc-title">Premium Esthetics</div><div class="svc-text">High-quality zirconia, lithium disilicate, veneers and implant restorations.</div></div>
         <div class="svc-card r d3"><div class="svc-num">03</div><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><div class="svc-title">Canadian Quality Standards</div><div class="svc-text">Reliable communication, quality control and professional case management.</div></div>
         <div class="svc-card r d1"><div class="svc-num">04</div><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div class="svc-title">Fast Turnaround</div><div class="svc-text">Efficient digital workflow with dependable international logistics.</div></div>
-        <div class="svc-card r d2"><div class="svc-num">05</div><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="svc-title">Dedicated Case Support</div><div class="svc-text">Clinical consultation for treatment planning and complex restorative cases.</div></div>
+        <div class="svc-card r d2"><div class="svc-num">05</div><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="svc-title">Dedicated Case Support</div><div class="svc-text">Responsive laboratory case coordination for complex restorative cases.</div></div>
         <div class="svc-card r d3"><div class="svc-num">06</div><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div class="svc-title">Secure Digital Communication</div><div class="svc-text">Fast and secure digital case submission.</div></div>
         <div class="svc-card r d1"><div class="svc-num">07</div><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><div class="svc-title">Predictable Results</div><div class="svc-text">Consistent precision with every restoration.</div></div>
         <div class="svc-card r d2"><div class="svc-num">08</div><div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="svc-title">Long-Term Partnership</div><div class="svc-text">Relationships built on trust, transparency and continuous support.</div></div>
@@ -1010,7 +1008,7 @@ footer{
       <div class="candidate-grid r" style="margin:28px auto 0;grid-template-columns:repeat(2,1fr);text-align:left;">
         <div class="candidate-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Canadian Digital Dental Company</span></div>
         <div class="candidate-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Global Partnership Network</span></div>
-        <div class="candidate-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Comprehensive Clinical &amp; Laboratory Support</span></div>
+        <div class="candidate-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Comprehensive Digital Workflow &amp; Laboratory Support</span></div>
         <div class="candidate-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Multiple Digital Scanner Compatibility</span></div>
         <div class="candidate-item" style="grid-column:1/-1;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Modern CAD/CAM Workflow</span></div>
       </div>
@@ -1119,14 +1117,14 @@ footer{
           <div class="svc-num">01</div>
           <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="12" x2="15" y2="12"/></svg></div>
           <div class="svc-h">AmisA LAB tech</div>
-          <p class="svc-p">High-end ceramic restorations, CAD/CAM workflows, delivered worldwide in 12 business days.</p>
+          <p class="svc-p">Digital workflow support and business-to-business laboratory case coordination — CAD/CAM file management, shade communication and production logistics through independent laboratory providers.</p>
           <div class="svc-arrow">Explore <span>→</span></div>
         </div>
         <div class="svc-card r d2" onclick="go('education')">
           <div class="svc-num">02</div>
           <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
           <div class="svc-h">CE Education</div>
-          <p class="svc-p">Premium CE courses in Persian — hands-on workshops, online & in-person across BC and worldwide.</p>
+          <p class="svc-p">Premium lectures in Persian — non-patient-based workshops, online &amp; in-person across BC and worldwide.</p>
           <div class="svc-arrow">Explore <span>→</span></div>
         </div>
         <div class="svc-card r d3" onclick="go('club')">
@@ -1139,22 +1137,15 @@ footer{
         <div class="svc-card r d1" onclick="go('consultation')">
           <div class="svc-num">04</div>
           <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <div class="svc-h">Consultation</div>
-          <p class="svc-p">Professional consultation anytime, anywhere — email, virtual call, or in-person West Vancouver.</p>
-          <div class="svc-arrow">Explore <span>→</span></div>
-        </div>
-        <div class="svc-card r d2" onclick="go('clinic')">
-          <div class="svc-num">05</div>
-          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-          <div class="svc-h">AmisA CLINIC</div>
-          <p class="svc-p">AmisA Dental Clinic — premium in-person care, smile design, and esthetic dentistry. Coming soon.</p>
+          <div class="svc-h">Laboratory Case Communication</div>
+          <p class="svc-p">Secure business-to-business communication for licensed dental professionals regarding laboratory prescriptions, digital files, shade information and case status. AmisA does not provide patient consultations, diagnosis or patient-specific treatment recommendations.</p>
           <div class="svc-arrow">Explore <span>→</span></div>
         </div>
         <div class="svc-card r d3" onclick="go('products')">
-          <div class="svc-num">06</div>
+          <div class="svc-num">05</div>
           <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
           <div class="svc-h">AmisA PRODUCTS</div>
-          <p class="svc-p">Premium dental products and clinic supplies — sourced globally, delivered to your practice.</p>
+          <p class="svc-p">Premium dental products and professional supplies — sourced globally, delivered to your practice.</p>
           <div class="svc-arrow">Explore <span>→</span></div>
         </div>
       </div>
@@ -1170,14 +1161,14 @@ footer{
       <h2 class="sh r d1">Meet the <em>Founders</em></h2>
       <div class="team-grid r d2">
         <div class="team-card">
-          <div class="team-name">Dr. Amirhossein Sarbazi</div>
-          <div class="team-role">DDS, Prosthodontist · Founder & CEO</div>
-          <p class="team-bio">Over 20 years of experience in clinical practice, education, and international dental business. Leading AmisA with a vision rooted in excellence, ethics, and global collaboration.</p>
+          <div class="team-name">Amirhossein Sarbazi</div>
+          <div class="team-role">Founder & CEO</div>
+          <p class="team-bio">Dental educator and business founder with international academic and professional experience.</p>
         </div>
         <div class="team-card">
-          <div class="team-name">Dr. Golsa Alavi</div>
-          <div class="team-role">DDS · Co-founder & Director of Clinical Affairs</div>
-          <p class="team-bio">Expert in esthetic and restorative treatments. Committed to advancing minimally invasive smile solutions.</p>
+          <div class="team-name">Golsa Alavi</div>
+          <div class="team-role">Co-Founder</div>
+          <p class="team-bio">Supporting AmisA's educational and business development initiatives.</p>
         </div>
       </div>
 
@@ -1197,12 +1188,25 @@ footer{
 
   <div class="divider"></div>
 
+  <!-- CURRENT SCOPE OF AMISA -->
+  <section class="sec">
+    <div class="sec-inner" style="max-width:800px;">
+      <div class="r"><div class="eyebrow" style="justify-content:center;"><div class="eyebrow-line"></div><span class="eyebrow-txt">Current Scope</span><div class="eyebrow-line"></div></div></div>
+      <h2 class="sh r d1" style="text-align:center;">Current Scope of AmisA</h2>
+      <p class="sp r d2" style="text-align:center;">AmisA Biodental Co. is currently focused on non-clinical dental education, continuing education programming, digital workflow support, and business-to-business dental laboratory case coordination for licensed dental professionals.</p>
+      <p class="sp r d2" style="text-align:center;">AmisA does not currently operate a dental clinic, provide patient care, diagnose conditions, develop patient treatment plans or perform restricted clinical activities in British Columbia.</p>
+      <p class="sp r d2" style="text-align:center;">Any future patient-care service would be established only after all required licences, permits and regulatory approvals have been obtained and would operate through appropriately licensed BCCOHP oral health professionals acting within their authorized scope of practice.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
   <!-- CONTACT -->
   <section class="sec" id="contact" style="background:var(--navy2);">
     <div class="sec-inner">
       <div class="r"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Get in Touch</span></div></div>
       <h2 class="sh r d1">We Love to <em>Hear From You</em></h2>
-      <p class="sp r d2">Whether you are a dentist interested in collaborating, a clinic seeking premium restorations, or a student exploring our courses — we are here to connect.</p>
+      <p class="sp r d2">Whether you are a dentist interested in collaborating, a dental practice seeking laboratory coordination, or a student exploring our courses — we are here to connect.</p>
       <div class="cnt-grid r d3">
         <div>
           <div class="cnt-item"><div class="cnt-lbl">Phone / WhatsApp</div><div class="cnt-val">+1 (778) 956-4596</div></div>
@@ -1214,7 +1218,7 @@ footer{
         <form class="cnt-form" onsubmit="return false;">
           <input type="text" placeholder="Full Name">
           <input type="email" placeholder="Email Address">
-          <select><option value="" disabled selected>How can we help?</option><option>Lab Case / Restoration</option><option>CE Courses</option><option>Club Membership</option><option>Consultation</option><option>General Inquiry</option></select>
+          <select><option value="" disabled selected>How can we help?</option><option>Lab Case / Restoration</option><option>CE Courses</option><option>Club Membership</option><option>Laboratory Case Communication</option><option>General Inquiry</option></select>
           <textarea placeholder="Your message..."></textarea>
           <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center;"><span>Send Message</span></button>
         </form>
@@ -1222,6 +1226,7 @@ footer{
     </div>
   </section>
 
+  <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self · West Vancouver, BC</div></footer>
 </div>
 
@@ -1230,8 +1235,9 @@ footer{
   <div class="iph r">
     <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Continuing Education</span></div>
     <h1 class="sh">Courses &amp; <em>Workshops</em></h1>
-    <p class="sp">At AmisA Education, we believe continued education is the key to clinical excellence. Hands-on workshops and advanced courses for all involved in oral health care — in Persian, online &amp; in-person.</p>
+    <p class="sp">At AmisA Education, we believe continued education is the key to professional excellence. Non-patient-based workshops and advanced lecture courses for all involved in oral health care — in Persian, online &amp; in-person.</p>
     <div style="margin-top:24px;"><a href="https://pci.jotform.com/form/261402366100038" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;"><span>Upcoming Lecture Registration →</span></a></div>
+    <div class="callout-box" style="margin-top:26px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><p><strong style="color:var(--gold2);">Educational Scope Notice</strong> — AmisA currently provides educational lectures and non-patient-based learning activities only. Programs do not include diagnosis, patient treatment, procedures on patients or restricted clinical activities requiring BCCOHP licensure. Any future regulated clinical component would be offered only after applicable approvals are obtained and under the responsibility of appropriately licensed professionals.</p></div>
   </div>
   <section class="sec">
     <div class="sec-inner">
@@ -1244,7 +1250,7 @@ footer{
         <div class="topic-pill">Pediatric dentistry</div>
         <div class="topic-pill">Full-mouth rehabilitation</div>
       </div>
-      <p style="font-size:12px;color:var(--gray);font-style:italic;margin-top:14px;">Interactive, case-based, and immediately applicable in practice.</p></div>
+      <p style="font-size:12px;color:var(--gray);font-style:italic;margin-top:14px;">Educational, case-based content intended to support the professional learning of eligible participants. Participants remain responsible for practising within their own competence, licence conditions and jurisdictional requirements.</p></div>
 
       <div style="display:flex;flex-direction:column;gap:20px;margin-top:48px;">
 
@@ -1262,14 +1268,14 @@ footer{
             <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:24px;">
               <div>
                 <div style="font-size:10px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Continuing Education Series · 2026</div>
-                <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1.2;color:var(--white);">The <em style="color:var(--gold2);font-style:italic;">Art &amp; Science</em> of<br>Implant Restorations &amp; Surgery</div>
+                <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;line-height:1.2;color:var(--white);">The <em style="color:var(--gold2);font-style:italic;">Art &amp; Science</em> of<br>Implant Restorative and Surgical Concepts</div>
                 <div style="width:48px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2));margin-top:14px;border-radius:1px;"></div>
               </div>
               <div style="border:1px solid rgba(212,175,112,0.45);border-radius:6px;padding:12px 18px;background:rgba(212,175,112,0.07);min-width:160px;position:relative;flex-shrink:0;text-align:left;">
                 <div style="position:absolute;top:-9px;left:14px;background:var(--gold);color:#141414;font-size:8px;font-weight:700;letter-spacing:0.14em;padding:2px 8px;border-radius:2px;">UPCOMING</div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--gold2);line-height:1.1;margin-bottom:4px;">June 21, 2026</div>
                 <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--white);line-height:1.3;margin-bottom:6px;">Session II · Implant<br>Restorations &amp; Surgery</div>
-                <div style="font-size:10px;color:rgba(212,175,112,0.6);letter-spacing:0.07em;">3 CE Credits</div>
+                <div style="font-size:10px;color:rgba(212,175,112,0.6);letter-spacing:0.07em;">3 Instructional Hours</div>
               </div>
             </div>
 
@@ -1280,7 +1286,7 @@ footer{
                 <div style="font-family:'Cormorant Garamond',serif;font-size:12px;font-weight:600;color:var(--gold);">04</div>
                 <div>
                   <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);line-height:1.2;">Implant Restorations &amp; Surgery</div>
-                  <div style="font-size:11px;color:var(--gold2);letter-spacing:0.08em;margin-top:3px;">June 21, 2026 &nbsp;·&nbsp; 3 CE Credits</div>
+                  <div style="font-size:11px;color:var(--gold2);letter-spacing:0.08em;margin-top:3px;">June 21, 2026 &nbsp;·&nbsp; 3 Instructional Hours</div>
                 </div>
                 <div style="font-size:9px;letter-spacing:0.12em;color:#141414;background:linear-gradient(90deg,var(--gold),var(--gold2));padding:4px 11px;border-radius:2px;text-transform:uppercase;white-space:nowrap;font-weight:700;">Session IV</div>
               </div>
@@ -1289,7 +1295,7 @@ footer{
                 <div style="font-family:'Cormorant Garamond',serif;font-size:12px;font-weight:600;color:var(--gold);">02</div>
                 <div>
                   <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);line-height:1.2;">Implant Restorations &amp; Surgery</div>
-                  <div style="font-size:11px;color:var(--gold2);letter-spacing:0.08em;margin-top:3px;">August 30, 2026 &nbsp;·&nbsp; 3 CE Credits</div>
+                  <div style="font-size:11px;color:var(--gold2);letter-spacing:0.08em;margin-top:3px;">August 30, 2026 &nbsp;·&nbsp; 3 Instructional Hours</div>
                 </div>
                 <div style="font-size:9px;letter-spacing:0.12em;color:#141414;background:linear-gradient(90deg,var(--gold),var(--gold2));padding:4px 11px;border-radius:2px;text-transform:uppercase;white-space:nowrap;font-weight:700;">Session II</div>
               </div>
@@ -1298,7 +1304,7 @@ footer{
                 <div style="font-family:'Cormorant Garamond',serif;font-size:12px;font-weight:600;color:var(--gold);">03</div>
                 <div>
                   <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);line-height:1.2;">Implant Restorations &amp; Surgery</div>
-                  <div style="font-size:11px;color:var(--gold2);letter-spacing:0.08em;margin-top:3px;">October 18, 2026 &nbsp;·&nbsp; 3 CE Credits</div>
+                  <div style="font-size:11px;color:var(--gold2);letter-spacing:0.08em;margin-top:3px;">October 18, 2026 &nbsp;·&nbsp; 3 Instructional Hours</div>
                 </div>
                 <div style="font-size:9px;letter-spacing:0.12em;color:#141414;background:linear-gradient(90deg,var(--gold),var(--gold2));padding:4px 11px;border-radius:2px;text-transform:uppercase;white-space:nowrap;font-weight:700;">Session III</div>
               </div>
@@ -1341,6 +1347,8 @@ footer{
               <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(212,175,112,0.7);">🎓 <strong style="color:var(--gold2);font-weight:400;">Free</strong> for Students</div>
             </div>
 
+            <div style="font-size:10.5px;color:rgba(212,175,112,0.55);text-align:center;margin-top:14px;line-height:1.6;">Certificate of attendance available. Participants are responsible for confirming continuing education eligibility with their own licensing authority.</div>
+
             <!-- Bottom note -->
             <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px;">
               <div style="font-size:10px;color:rgba(212,175,112,0.3);letter-spacing:0.1em;text-transform:uppercase;">amisabiodental.ca</div>
@@ -1360,7 +1368,7 @@ footer{
                 <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);line-height:1.2;">Vancouver Lecture</div>
                 <div style="font-size:11px;color:var(--gray);margin-top:3px;">📍 Vancouver, BC &nbsp;·&nbsp; 💬 Persian</div>
               </div>
-              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,112,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">3 CE</div>
+              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,112,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">3 Hrs</div>
             </div>
 
             <div style="display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(212,175,112,0.22);border-radius:6px;padding:14px 20px;">
@@ -1369,7 +1377,7 @@ footer{
                 <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--white);line-height:1.2;">Restoring Severely Damaged Endodontically Treated Teeth</div>
                 <div style="font-size:11px;color:var(--gray);margin-top:3px;">📍 Vancouver, BC &nbsp;·&nbsp; 💬 Persian</div>
               </div>
-              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,112,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">2.5 CE</div>
+              <div style="font-size:9px;letter-spacing:0.12em;color:var(--gray);border:1px solid rgba(212,175,112,0.27);padding:3px 10px;border-radius:2px;text-transform:uppercase;white-space:nowrap;">2.5 Hrs</div>
             </div>
 
             <div style="display:grid;grid-template-columns:64px 100px 1fr auto;align-items:center;gap:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(212,175,112,0.22);border-radius:6px;padding:14px 20px;">
@@ -1407,6 +1415,7 @@ footer{
 
       </div></div>
   </section>
+  <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self</div></footer>
 </div>
 
@@ -1415,10 +1424,11 @@ footer{
   <div class="iph r">
     <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Digital Laboratory</span></div>
     <h1 class="sh">Working with <em>AmisA LAB</em></h1>
-    <p class="sp">Fast. Reliable. Design for Dentists. World Wide Service — Delivered in 12 business days or less.</p>
+    <p class="sp">Fast. Reliable. Design for Dentists. Estimated turnaround is confirmed for each case and may vary by restoration type, production requirements and destination.</p>
   </div>
   <section class="sec">
     <div class="sec-inner">
+      <div class="callout-box r" style="margin-bottom:32px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><p><strong style="color:var(--gold2);">Professional Use Only</strong> — Laboratory services are available only in response to prescriptions or authorized requests from licensed dental professionals. AmisA does not provide services directly to patients. Clinical assessment, tooth preparation, intraoral scanning, material selection, treatment decisions, delivery and follow-up remain the responsibility of the treating licensed professional. Fabrication is performed through appropriately qualified laboratory providers, subject to applicable jurisdictional requirements.</p></div>
       <div class="lab-specs r">
         <div class="spec-item"><div class="spec-h">Non-Prep &amp; Ultra-Thin Ceramic Veneers</div><p class="spec-p">Translucent, natural-looking veneers with minimal or no tooth preparation required.</p></div>
         <div class="spec-item"><div class="spec-h">Full-Contour Zirconia &amp; Lithium Disilicate</div><p class="spec-p">Durable, aesthetic crowns with exceptional strength and natural appearance.</p></div>
@@ -1427,7 +1437,7 @@ footer{
       </div>
 
       <div class="r d2">
-        <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">How to Submit a Lab Case</span></div>
+        <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">How to Submit a Laboratory Case</span></div>
         <div class="steps-timeline" style="margin-top:8px;">
           <div class="step-row"><div class="step-circle">1</div><div class="step-content"><div class="step-title">Preparation &amp; Scan</div><div class="step-desc">Prepare the case clinically and take digital impressions with your scanner.</div></div></div>
           <div class="step-row"><div class="step-circle">2</div><div class="step-content"><div class="step-title">Complete Work Sheet</div><div class="step-desc">Fill out our lab worksheet with full case specifications and shade selection. <a href="https://form.jotform.com/251717238401048" target="_blank" rel="noopener" style="color:var(--gold2);">Open Worksheet Form →</a></div></div></div>
@@ -1439,38 +1449,23 @@ footer{
       <img loading="lazy" decoding="async" src="images/lab.png" alt="AmisA Lab Work" class="full-img r" style="margin-top:48px;">
     </div>
   </section>
-  <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self</div></footer>
-</div>
-
-<!-- ══════════ CLINIC ══════════ -->
-<div class="page" id="p-clinic">
-  <div style="position:relative;">
-    <div class="cs-screen">
-      <div class="cs-num">CL</div>
-      <div class="cs-content r">
-        <div class="eyebrow" style="justify-content:center;"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Dental Clinic</span><div class="eyebrow-line"></div></div>
-        <h1 class="sh" style="text-align:center;">AmisA Dental <em>Clinic</em></h1>
-        <p class="cs-sub">Premium in-person dental care, smile design, and esthetic treatments in West Vancouver, BC. Our clinic is coming soon — loading excellence.</p>
-        <button class="btn btn-primary" onclick="go('consultation')"><span>Book a Consultation</span></button>
-      </div>
-    </div>
-  </div>
-  <img loading="lazy" decoding="async" src="images/clinic.png" alt="AmisA Clinic" class="full-img r">
+  <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self</div></footer>
 </div>
 
 <!-- ══════════ GALLERY ══════════ -->
 <div class="page" id="p-gallery">
   <div class="iph r">
-    <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Clinical Results</span></div>
-    <h1 class="sh">Before &amp; After <em>Gallery</em></h1>
-    <p class="sp">Real clinical results — ceramic veneers, full-mouth rehabilitation, implant restorations, and smile transformations by the AmisA team.</p>
+    <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Laboratory Portfolio</span></div>
+    <h1 class="sh"><em>Laboratory</em> Portfolio</h1>
+    <p class="sp">Portfolio examples illustrate laboratory design, production and communication outcomes. Clinical diagnosis, treatment planning, preparation, delivery and patient care were performed independently by the applicable treating professionals. Images are displayed only where AmisA has appropriate authorization to use them.</p>
   </div>
   <section class="sec" style="padding-top:32px;">
     <div class="sec-inner">
       <img loading="lazy" decoding="async" src="images/gallery.png" alt="Gallery" class="full-img r">
     </div>
   </section>
+  <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self</div></footer>
 </div>
 
@@ -1479,7 +1474,7 @@ footer{
   <div class="iph r">
     <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Membership Program</span></div>
     <h1 class="sh">AmisA <em>Club</em></h1>
-    <p class="sp">Join AmisA Club for FREE — earn points through your dental services and unlock exclusive rewards, travel vouchers, and masterclass access.</p>
+    <p class="sp">Join AmisA's professional community for FREE — earn points through eligible business-to-business laboratory orders and professional education registrations, and unlock exclusive rewards and masterclass access.</p>
     <div style="margin-top:24px;"><a href="https://form.jotform.com/251722462713251" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;"><span>Join the Club for FREE →</span></a></div>
   </div>
   <section class="sec">
@@ -1491,7 +1486,7 @@ footer{
           <ul class="tier-perks">
             <li>Complimentary access to <strong>two</strong> premium workshops or training programs</li>
             <li>Travel voucher up to <strong>$5,000</strong> for Mexico or Las Vegas Trip</li>
-            <li>One-on-one expert <strong>FREE</strong> consultations</li>
+            <li>One-on-one laboratory case planning session</li>
             <li>Exclusive AmisA masterclasses</li>
           </ul>
         </div>
@@ -1501,7 +1496,7 @@ footer{
           <ul class="tier-perks">
             <li>Up to <strong>50%</strong> discount on two educational programs</li>
             <li>Travel voucher up to <strong>$2,000</strong> for Mexico Trip</li>
-            <li>One-on-one expert <strong>FREE</strong> consultations</li>
+            <li>One-on-one laboratory case planning session</li>
             <li>Exclusive AmisA masterclasses</li>
           </ul>
         </div>
@@ -1519,14 +1514,15 @@ footer{
       <div style="margin-top:56px;" class="r d1">
         <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">How to Earn Points</span></div>
         <div class="points-table" style="margin-top:16px;">
-          <div class="pts-row"><span>For every $1,000 spent on dental services</span><span class="pts-val">10 pts</span></div>
+          <div class="pts-row"><span>For every eligible $1,000 in completed laboratory orders placed by an authorized dental practice</span><span class="pts-val">10 pts</span></div>
           <div class="pts-row"><span>Introducing a new colleague to AmisA</span><span class="pts-val">10 pts</span></div>
           <div class="pts-row"><span>Featuring AmisA on your official social media or website (up to 3×)</span><span class="pts-val">5 pts / post</span></div>
-          <div class="pts-row"><span>Achieving over $50,000 in service volume within 3 months</span><span class="pts-val">30 pts</span></div>
+          <div class="pts-row"><span>Achieving over $50,000 in eligible laboratory order volume within 3 months</span><span class="pts-val">30 pts</span></div>
         </div>
       </div>
     </div>
   </section>
+  <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self</div></footer>
 </div>
 
@@ -1538,7 +1534,7 @@ footer{
       <div class="cs-content r">
         <div class="eyebrow" style="justify-content:center;"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Online Store</span><div class="eyebrow-line"></div></div>
         <h1 class="sh" style="text-align:center;">AmisA <em>Products</em></h1>
-        <p class="cs-sub">Premium dental products and clinical supplies — globally sourced, delivered to your practice. Launching soon.</p>
+        <p class="cs-sub">Professional dental products and supplies for authorized dental practices — globally sourced. Launching soon.</p>
         <div style="display:flex;gap:0;">
           <input type="email" placeholder="your@email.com" style="background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.18);border-right:none;padding:12px 16px;color:var(--white);font-family:'Inter',sans-serif;font-size:12px;outline:none;width:240px;">
           <button class="btn btn-primary" style="border-radius:0;" onclick="this.querySelector('span').textContent='✓ Done'"><span>Notify Me</span></button>
@@ -1547,15 +1543,16 @@ footer{
     </div>
   </div>
   <img loading="lazy" decoding="async" src="images/products.png" alt="AmisA Products" class="full-img r">
+  <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self</div></footer>
 </div>
 
 <!-- ══════════ CONSULTATION ══════════ -->
 <div class="page" id="p-consultation">
   <div class="iph r">
-    <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Consultation Centre</span></div>
-    <h1 class="sh">Professional <em>Consultation</em></h1>
-    <p class="sp">Anytime, Anywhere — Connect with our specialist via Email, Virtual Call or In-Person.</p>
+    <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · Laboratory Case Communication</span></div>
+    <h1 class="sh">Laboratory Case <em>Communication</em></h1>
+    <p class="sp">Secure business-to-business communication for licensed dental professionals regarding laboratory prescriptions, digital files, shade information, material requests, production logistics and case status. AmisA does not provide patient consultations, diagnosis or patient-specific treatment recommendations.</p>
   </div>
   <section class="sec" style="padding-top:32px;">
     <div class="sec-inner">
@@ -1565,25 +1562,27 @@ footer{
           <div style="display:flex;flex-direction:column;gap:10px;margin-top:16px;">
             <div class="method-card"><div class="method-ic"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="method-label">Email</div><div class="method-sub">amisa.biodental.co@gmail.com</div></div></div>
             <div class="method-card"><div class="method-ic"><svg viewBox="0 0 24 24"><path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.82v6.36a1 1 0 0 1-1.447.89L15 14M3 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z"/></svg></div><div><div class="method-label">Virtual Call</div><div class="method-sub">Zoom / Teams — worldwide</div></div></div>
-            <div class="method-card"><div class="method-ic"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div><div class="method-label">In-Person</div><div class="method-sub">West Vancouver, BC, Canada</div></div></div>
             <div class="method-card"><div class="method-ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17z"/></svg></div><div><div class="method-label">Phone / WhatsApp</div><div class="method-sub">+1 (778) 956-4596</div></div></div>
           </div>
         </div>
         <div>
-          <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Consultation Form</span></div>
+          <p style="font-size:13px;color:var(--gray);line-height:1.9;margin-bottom:24px;">Communications from AmisA relate to laboratory workflow, technical production feasibility and administrative coordination. The treating licensed professional remains responsible for diagnosis, treatment planning, informed consent, clinical material selection, delivery and patient care.</p>
+          <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Laboratory Case Communication Form</span></div>
           <form class="cnt-form" style="margin-top:16px;" onsubmit="return false;">
             <input type="text" placeholder="Full Name">
-            <input type="text" placeholder="Specialty / Role">
+            <input type="text" placeholder="Professional Role">
             <input type="email" placeholder="Email Address">
             <input type="tel" placeholder="Phone / WhatsApp">
-            <select><option value="" disabled selected>Consultation Type</option><option>Submit a Lab Case</option><option>CE Courses &amp; Education</option><option>Club Membership</option><option>General Inquiry</option></select>
+            <select><option value="" disabled selected>Reason for Contact</option><option>Submit a Lab Case</option><option>CE Courses &amp; Education</option><option>Club Membership</option><option>General Inquiry</option></select>
             <textarea placeholder="Describe your case or question..."></textarea>
+            <label style="display:flex;align-items:flex-start;gap:10px;font-size:12.5px;color:var(--gray);line-height:1.6;margin:4px 0 2px;"><input type="checkbox" required style="margin-top:3px;flex-shrink:0;">I confirm that I am a licensed or otherwise authorized dental professional submitting a business-to-business laboratory or educational inquiry.</label>
             <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center;"><span>Submit Request</span></button>
           </form>
         </div>
       </div>
     </div>
   </section>
+  <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self</div></footer>
 </div>
 
@@ -1594,7 +1593,7 @@ footer{
   <div class="iph r" style="padding-bottom:8px;">
     <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA · International Careers</span></div>
     <h1 class="sh">Become an International <em>Business Development Partner</em></h1>
-    <p class="sp" style="max-width:640px;">Join AmisA Biodental Co., a Canadian digital dental company, and help connect dental professionals with premium laboratory solutions worldwide.</p>
+    <p class="sp" style="max-width:640px;">Join AmisA Biodental Co., a Canadian digital-workflow and dental laboratory services coordination company, and help connect dental professionals with premium laboratory solutions worldwide.</p>
 
     <div class="pp-highlights">
       <div class="pp-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/></svg>Fully Remote</div>
@@ -1618,7 +1617,7 @@ footer{
       <div class="pp-visual-scanline"></div>
       <img src="images/logo.png" alt="" class="pp-visual-mark">
       <div class="pp-visual-sub">AmisA Partnership Program</div>
-      <div class="pp-visual-label">Canadian Digital Dental Laboratory</div>
+      <div class="pp-visual-label">Digital Workflow &amp; Laboratory Case Coordination</div>
     </div>
   </div>
 
@@ -1638,7 +1637,7 @@ footer{
       <div class="r" style="text-align:center;">
         <div class="eyebrow" style="justify-content:center;"><div class="eyebrow-line"></div><span class="eyebrow-txt">Section 01 · About AmisA</span><div class="eyebrow-line"></div></div>
         <h2 class="sh">A Canadian Digital <em>Dental Company</em></h2>
-        <p class="sp" style="margin:0 auto;">AmisA Biodental Co. is a Canadian digital dental laboratory focused on esthetic restorations, digital workflows, and professional support for dentists and dental clinics.</p>
+        <p class="sp" style="margin:0 auto;">AmisA Biodental Co. is a Canadian digital-workflow and dental laboratory services coordination company supporting dentists and dental practices.</p>
       </div>
       <div class="trust-grid">
         <div class="trust-item r d1"><div class="trust-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5.5 6 .5-4.5 4 1.3 5.9L12 15l-5.2 2.9 1.3-5.9-4.5-4 6-.5z"/></svg></div><div class="trust-label">Canadian Company</div></div>
@@ -1682,7 +1681,7 @@ footer{
           <p class="sp" style="margin-bottom:0;">Partners introduce AmisA services to dental professionals and support the growth of AmisA's international network. The role is relationship-driven and business-focused.</p>
           <div class="callout-box">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
-            <p>Partners do not perform dental procedures and do not need clinical knowledge.</p>
+            <p>Partners do not perform dental procedures and do not need clinical knowledge. Partners must not provide diagnosis, clinical advice or treatment recommendations, and must not represent themselves as dentists, dental specialists or other regulated oral health professionals unless independently authorized to do so in their jurisdiction.</p>
           </div>
         </div>
         <div>
@@ -1805,6 +1804,7 @@ footer{
     </div>
   </section>
 
+  <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self</div></footer>
 </div>
 
@@ -1835,7 +1835,7 @@ drawAmbient();
 window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40));
 
 // ── Page navigation ──
-const VALID_PAGES = ['home','education','lab','clinic','gallery','club','products','consultation','partnership'];
+const VALID_PAGES = ['home','education','lab','gallery','club','products','consultation','partnership'];
 function go(id, skipPush){
   if(!VALID_PAGES.includes(id)) id='home';
   const target = document.getElementById('p-'+id);
@@ -1882,15 +1882,14 @@ window.addEventListener('orientationchange',()=>{
 });
 function updateMetaForPage(id){
   const titles = {
-    home:'AmisA Biodental Co. — Premium Digital Dentistry',
+    home:'AmisA Biodental Co. — Digital Workflow, Education & Laboratory Case Coordination',
     partnership:'International Business Development Partner | AmisA Biodental Co.',
     education:'CE Education — AmisA Biodental Co.',
     lab:'Digital Lab — AmisA Biodental Co.',
-    clinic:'Clinic — AmisA Biodental Co.',
     gallery:'Gallery — AmisA Biodental Co.',
     club:'Club Membership — AmisA Biodental Co.',
     products:'Products — AmisA Biodental Co.',
-    consultation:'Consultation — AmisA Biodental Co.'
+    consultation:'Laboratory Case Communication — AmisA Biodental Co.'
   };
   const descriptions = {
     partnership:'Join AmisA Biodental Co. as an international Business Development Partner. Flexible remote opportunity with professional training, mentorship, and performance-based earning potential.'
@@ -1898,7 +1897,7 @@ function updateMetaForPage(id){
   if(titles[id]) document.title = titles[id];
   const descTag = document.querySelector('meta[name="description"]');
   if(descTag){
-    descTag.setAttribute('content', descriptions[id] || 'AmisA Biodental Co. is a Canadian digital dental laboratory delivering esthetic restorations, digital workflows, education, and international partnership opportunities.');
+    descTag.setAttribute('content', descriptions[id] || 'AmisA Biodental Co. provides professional dental education, digital workflow support, and business-to-business dental laboratory case coordination for licensed dental professionals, with international partnership opportunities.');
   }
 }
 go(resolvePathToPage(), true);
@@ -1923,6 +1922,5 @@ function goContact(){
 
 </script>
 
-<script src="//code.tidio.co/zugejbvovvfrkg12hkglom4ysnaygazf.js" async></script>
 </body>
 </html>
