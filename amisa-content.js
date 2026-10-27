@@ -1,0 +1,12 @@
+/* AmisA public dental news/events; no patient or case data. */
+(()=>{'use strict';
+const base='https://dciupcmshcvspqctknrd.supabase.co/rest/v1/';
+const key='sb_publishable_0UZAjP-b8z315vu2ONQoqg_lnaGvfjd';
+function elem(tag,text){const x=document.createElement(tag);if(text!=null)x.textContent=String(text);return x;}
+function safeUrl(url){try{const x=new URL(url);return x.protocol==='https:'||x.protocol==='http:'?x.href:null;}catch{return null;}}
+function render(id,items,kind){const root=document.getElementById(id);if(!root)return;root.replaceChildren();if(!items.length){root.append(elem('p',kind==='news'?'No published news available.':'No upcoming events available.'));return;}
+for(const item of items){const a=elem('article');a.style.cssText='padding:16px 0;border-bottom:1px solid #49413b';const h=elem('h4',item.title||'Untitled');h.style.cssText='font-size:17px;margin-bottom:8px';a.append(h);const body=item.summary||item.description;if(body){const p=elem('p',body);p.style.cssText='font-size:14px;line-height:1.6;color:#c8c2b9';a.append(p);}const rawDate=item.published_at||item.event_date;if(rawDate){const d=new Date(rawDate);if(!Number.isNaN(d.getTime())){const t=elem('p',d.toLocaleDateString('en-CA',{year:'numeric',month:'short',day:'numeric'}));t.style.cssText='color:#d4af70;font-size:12px;margin-top:8px';a.append(t);}}const href=safeUrl(kind==='news'?item.source_url:item.registration_url);if(href){const link=elem('a',kind==='news'?'Read source':'Event details');link.href=href;link.target='_blank';link.rel='noopener noreferrer';link.style.cssText='display:inline-block;margin-top:8px;color:#d4af70';a.append(link);}root.append(a);}}
+async function load(table,query,id,kind){const root=document.getElementById(id);if(!root)return;try{const r=await fetch(base+table+'?'+query,{headers:{apikey:key,Accept:'application/json'}});if(!r.ok)throw Error('HTTP '+r.status);const data=await r.json();render(id,Array.isArray(data)?data:[],kind);}catch(e){console.warn('Public AmisA content unavailable',table,e);root.textContent='Content temporarily unavailable.';}}
+load('dental_news','select=title,summary,source_url,published_at&is_published=eq.true&order=published_at.desc.nullslast&limit=6','amisa-news-list','news');
+load('events','select=title,description,registration_url,event_date&is_published=eq.true&event_date=gte.'+encodeURIComponent(new Date().toISOString())+'&order=event_date.asc&limit=6','amisa-events-list','events');
+})();
