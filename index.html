@@ -998,6 +998,8 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
 .sc-cap b{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;color:var(--white);line-height:1.2;}
 .sc-card.sc-illus{aspect-ratio:auto;display:flex;flex-direction:column;background:radial-gradient(ellipse at 50% 35%,rgba(212,175,112,0.09),transparent 65%),linear-gradient(160deg,#1c1c1c,#0b0b0b);}
 .sc-card.sc-illus img{height:auto;aspect-ratio:400/340;object-fit:contain;filter:none;}
+.sc-card.sc-photo picture{display:block;aspect-ratio:400/340;overflow:hidden;}
+.sc-card.sc-photo img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 45%;}
 .sc-card.sc-illus .sc-cap{position:static;background:none;padding:14px 18px 18px;border-top:0.5px solid rgba(212,175,112,0.18);}
 .sc-note{margin-top:18px;font-size:12px;font-style:italic;color:var(--gray2);}
 @media (hover:hover){
@@ -1375,11 +1377,11 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
            with a <picture> whose source is at least 1200 px wide (2x for Retina) and remove class "sc-illus". -->
       <div class="showcase">
         <figure class="sc-card sc-illus r r-scale d1"><img src="images/illus-crown.svg" width="400" height="340" alt="Illustration of a full-contour crown seated on a prepared tooth" loading="lazy" decoding="async"><figcaption class="sc-cap"><span>Crowns</span><b>Zirconia &amp; Lithium Disilicate</b></figcaption></figure>
-        <figure class="sc-card sc-illus r r-scale d2"><img src="images/illus-veneer.svg" width="400" height="340" alt="Illustration of an ultra-thin ceramic veneer on a central incisor, front and side views" loading="lazy" decoding="async"><figcaption class="sc-cap"><span>Esthetics</span><b>Ultra-Thin Ceramic Veneers</b></figcaption></figure>
+        <figure class="sc-card sc-illus sc-photo r r-scale d2"><picture><source type="image/webp" srcset="images/veneers-960.webp 960w, images/veneers-1920.webp 1920w" sizes="(max-width:768px) 118vw, (max-width:1024px) 540px, 410px"><img src="images/veneers-1920.jpg" width="1920" height="1080" alt="Close-up of ultra-thin ceramic veneers on the upper central and lateral incisors, showing natural translucency and surface texture" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Esthetics</span><b>Ultra-Thin Ceramic Veneers</b></figcaption></figure>
         <figure class="sc-card sc-illus r r-scale d3"><img src="images/illus-implant.svg" width="400" height="340" alt="Illustration of an implant-supported crown with abutment and fixture" loading="lazy" decoding="async"><figcaption class="sc-cap"><span>Implants</span><b>Implant Restorations</b></figcaption></figure>
         <figure class="sc-card sc-illus r r-scale d4"><img src="images/illus-bridge.svg" width="400" height="340" alt="Illustration of a three-unit bridge over two prepared abutment teeth" loading="lazy" decoding="async"><figcaption class="sc-cap"><span>Fixed Prosthetics</span><b>Bridges &amp; Inlays / Onlays</b></figcaption></figure>
       </div>
-      <p class="sc-note r">Technical illustrations by AmisA. Clinical diagnosis, treatment planning and delivery remain the responsibility of the treating licensed professional.</p>
+      <p class="sc-note r">Crown, implant and bridge: technical illustrations by AmisA. Clinical diagnosis, treatment planning and delivery remain the responsibility of the treating licensed professional.</p>
     </div>
   </section>
 
