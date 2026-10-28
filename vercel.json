@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/:page(news|events|partnership|education|research|lab|gallery|club|products|consultation)", "destination": "/index.html" },
+    { "source": "/:page(news|events|partnership|education|research|lab|gallery|club|products|consultation)/", "destination": "/index.html" }
+  ],
+  "redirects": [
+    { "source": "/home", "destination": "/", "permanent": true }
+  ]
+}
