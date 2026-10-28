@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340" role="img" aria-label="Illustration of an ultra-thin ceramic veneer on a central incisor, front and side views">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2e4be"/><stop offset=".5" stop-color="#d4af70"/><stop offset="1" stop-color="#a8844a"/></linearGradient>
+ <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2e4be" stop-opacity=".16"/><stop offset="1" stop-color="#d4af70" stop-opacity=".03"/></linearGradient>
+ <radialGradient id="glow" cx=".5" cy=".45" r=".55"><stop offset="0" stop-color="#d4af70" stop-opacity=".14"/><stop offset="1" stop-color="#d4af70" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#d4af70" stroke-opacity=".07" stroke-width=".6"/></pattern>
+</defs>
+<rect width="400" height="340" fill="url(#grid)"/><rect width="400" height="340" fill="url(#glow)"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="#d4af70" stroke-opacity=".35" stroke-width="1.1" stroke-dasharray="4 5" d="M108,80 C114,44 128,22 150,14 C172,22 186,44 192,80"/>
+<path fill="url(#f)" stroke="url(#g)" stroke-width="2.2" d="M116,86 C116,76 132,72 150,72 C168,72 184,76 184,86 C192,130 202,178 204,212 C206,238 190,254 150,256 C110,254 94,238 96,212 C98,178 108,130 116,86 Z"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M124,96 C124,88 136,84 150,84 C164,84 176,88 176,96 C183,134 192,178 194,210 C196,230 182,244 150,246 C118,244 104,230 106,210 C108,178 117,134 124,96 Z"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M128,238 V228 M150,242 V230 M172,238 V228"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M128,120 C132,160 130,200 122,226 M172,120 C168,160 170,200 178,226"/>
+<path stroke="#d4af70" stroke-opacity=".5" stroke-width="1.1" d="M262,40 C252,92 248,150 250,198 C252,230 262,252 280,262 C290,244 298,204 300,154 C302,104 296,64 286,40"/>
+<path fill="#d4af70" fill-opacity=".28" stroke="url(#g)" stroke-width="2.2" d="M256,96 C246,150 246,210 274,260 L282,262 C258,214 258,152 266,98 Z"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M270,262 V282"/><text x="214" y="298" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">0.3–0.5 MM SHELL</text></g>
+</svg>

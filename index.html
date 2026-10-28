@@ -438,8 +438,10 @@ h2.sh em{font-style:italic;color:var(--gold2);} h1.sh{font-family:'Cormorant Gar
   transition:opacity 1.1s var(--ease);
 }
 .gal-slide.active{opacity:1;pointer-events:auto;z-index:1;}
+.gal-slide picture{display:flex;align-items:center;justify-content:center;width:100%;height:100%;}
 .gal-slide img{
-  width:100%;height:100%;object-fit:contain;object-position:center;
+  width:auto;height:auto;max-width:min(100%,var(--nw,100%));max-height:min(100%,var(--nh,100%));
+  object-fit:contain;object-position:center;
   display:block;user-select:none;-webkit-user-drag:none;cursor:zoom-in;
 }
 .gal-arrow{
@@ -486,7 +488,7 @@ h2.sh em{font-style:italic;color:var(--gold2);} h1.sh{font-family:'Cormorant Gar
 }
 #lightbox.open{opacity:1;pointer-events:auto;}
 #lightbox img{
-  max-width:88vw;max-height:84vh;object-fit:contain;
+  max-width:min(88vw,var(--nw,88vw));max-height:min(84vh,var(--nh,84vh));object-fit:contain;
   border:1px solid rgba(212,175,112,0.25);
   animation:lbIn 0.4s var(--ease);
 }
@@ -651,12 +653,12 @@ footer{
   h2.sh{font-size:clamp(28px,8vw,42px)!important;}
 }
 
-/* Tablet */
-@media (max-width:1024px) and (min-width:769px){
 @media (max-width:380px){
   .logo-text{display:none;}
 }
 
+/* Tablet */
+@media (max-width:1024px) and (min-width:769px){
   .hero{gap:32px;grid-template-columns:1fr 0.9fr!important;}
   .hero-h1{font-size:clamp(44px,6vw,68px)!important;}
   .svc-grid{grid-template-columns:repeat(2,1fr)!important;}
@@ -994,9 +996,13 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
 .sc-cap{position:absolute;left:0;right:0;bottom:0;padding:44px 20px 18px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.88));}
 .sc-cap span{display:block;font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:5px;}
 .sc-cap b{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;color:var(--white);line-height:1.2;}
+.sc-card.sc-illus{aspect-ratio:auto;display:flex;flex-direction:column;background:radial-gradient(ellipse at 50% 35%,rgba(212,175,112,0.09),transparent 65%),linear-gradient(160deg,#1c1c1c,#0b0b0b);}
+.sc-card.sc-illus img{height:auto;aspect-ratio:400/340;object-fit:contain;filter:none;}
+.sc-card.sc-illus .sc-cap{position:static;background:none;padding:14px 18px 18px;border-top:0.5px solid rgba(212,175,112,0.18);}
 .sc-note{margin-top:18px;font-size:12px;font-style:italic;color:var(--gray2);}
 @media (hover:hover){
   .sc-card:hover img{transform:scale(1.09);filter:none;}
+  .sc-card.sc-illus:hover img{transform:scale(1.05);}
   .sc-card:hover::after{inset:10px;border-color:rgba(212,175,112,0.45);}
 }
 
@@ -1270,7 +1276,7 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
       <h2 class="sh r d1">What We <em>Offer</em></h2>
       <div class="bento">
         <a class="b-card b-wide r r-left" href="/lab" onclick="go('lab');return false;">
-          <div class="b-media"><picture><source srcset="images/rest-crowns.webp" type="image/webp"><img src="images/rest-crowns.jpg" alt="Ceramic and metal-ceramic crowns on a reflective black surface" loading="lazy" decoding="async"></picture></div>
+          <div class="b-media"><picture><source srcset="images/hero-cadcam.webp" type="image/webp"><img src="images/hero-cadcam.png" alt="CAD/CAM milling of a ceramic crown in a digital dental laboratory" loading="lazy" decoding="async" style="object-position:50% 42%;"></picture></div>
           <div class="b-body">
             <div class="b-num">01</div>
             <div class="svc-h">AmisA LAB tech</div>
@@ -1365,13 +1371,15 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
     <div class="sec-inner">
       <div class="r"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Laboratory Craftsmanship</span></div>
       <h2 class="sh">Restorations, <em>Refined</em></h2></div>
+      <!-- Owned photography slot: to show a photograph instead of an illustration, replace the <img> in a card
+           with a <picture> whose source is at least 1200 px wide (2x for Retina) and remove class "sc-illus". -->
       <div class="showcase">
-        <figure class="sc-card r r-scale d1"><picture><source srcset="images/rest-crowns.webp" type="image/webp"><img src="images/rest-crowns.jpg" alt="Full-contour crowns" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Crowns</span><b>Zirconia &amp; Lithium Disilicate</b></figcaption></figure>
-        <figure class="sc-card r r-scale d2"><picture><source srcset="images/rest-veneers.webp" type="image/webp"><img src="images/rest-veneers.jpg" alt="Ceramic veneers on an anterior arch" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Esthetics</span><b>Ultra-Thin Ceramic Veneers</b></figcaption></figure>
-        <figure class="sc-card r r-scale d3"><picture><source srcset="images/rest-implant.webp" type="image/webp"><img src="images/rest-implant.jpg" alt="Illustration of an implant-supported restoration" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Implants</span><b>Implant Restorations</b></figcaption></figure>
-        <figure class="sc-card r r-scale d4"><picture><source srcset="images/rest-bridge.webp" type="image/webp"><img src="images/rest-bridge.jpg" alt="Illustration of a three-unit bridge" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Fixed Prosthetics</span><b>Bridges &amp; Inlays / Onlays</b></figcaption></figure>
+        <figure class="sc-card sc-illus r r-scale d1"><img src="images/illus-crown.svg" width="400" height="340" alt="Illustration of a full-contour crown seated on a prepared tooth" loading="lazy" decoding="async"><figcaption class="sc-cap"><span>Crowns</span><b>Zirconia &amp; Lithium Disilicate</b></figcaption></figure>
+        <figure class="sc-card sc-illus r r-scale d2"><img src="images/illus-veneer.svg" width="400" height="340" alt="Illustration of an ultra-thin ceramic veneer on a central incisor, front and side views" loading="lazy" decoding="async"><figcaption class="sc-cap"><span>Esthetics</span><b>Ultra-Thin Ceramic Veneers</b></figcaption></figure>
+        <figure class="sc-card sc-illus r r-scale d3"><img src="images/illus-implant.svg" width="400" height="340" alt="Illustration of an implant-supported crown with abutment and fixture" loading="lazy" decoding="async"><figcaption class="sc-cap"><span>Implants</span><b>Implant Restorations</b></figcaption></figure>
+        <figure class="sc-card sc-illus r r-scale d4"><img src="images/illus-bridge.svg" width="400" height="340" alt="Illustration of a three-unit bridge over two prepared abutment teeth" loading="lazy" decoding="async"><figcaption class="sc-cap"><span>Fixed Prosthetics</span><b>Bridges &amp; Inlays / Onlays</b></figcaption></figure>
       </div>
-      <p class="sc-note r">Illustrative imagery. Clinical diagnosis, treatment planning and delivery remain the responsibility of the treating licensed professional.</p>
+      <p class="sc-note r">Technical illustrations by AmisA. Clinical diagnosis, treatment planning and delivery remain the responsibility of the treating licensed professional.</p>
     </div>
   </section>
 
@@ -2382,6 +2390,13 @@ function go(id, skipPush){
   }
   if(typeof updateMetaForPage==='function') updateMetaForPage(id);
 }
+function revealNavItem(n){
+  const sc=document.getElementById('nav-scroll');
+  if(!sc || sc.scrollWidth<=sc.clientWidth) return;
+  const a=n.offsetLeft-sc.offsetLeft, b=a+n.offsetWidth;
+  if(a<sc.scrollLeft+8) sc.scrollLeft=a-8;
+  else if(b>sc.scrollLeft+sc.clientWidth-24) sc.scrollLeft=b-sc.clientWidth+24;
+}
 function resolvePathToPage(){
   const slug = window.location.pathname.replace(/^\/+|\/+$/g,'').toLowerCase();
   return VALID_PAGES.includes(slug) ? slug : 'home';
@@ -2390,13 +2405,6 @@ window.addEventListener('popstate', ()=>{ go(resolvePathToPage(), true); });
 
 // ── Reveal on scroll ──
 function initReveals(pageId){
-function revealNavItem(n){
-  const sc=document.getElementById('nav-scroll');
-  if(!sc || sc.scrollWidth<=sc.clientWidth) return;
-  const a=n.offsetLeft-sc.offsetLeft, b=a+n.offsetWidth;
-  if(a<sc.scrollLeft+8) sc.scrollLeft=a-8;
-  else if(b>sc.scrollLeft+sc.clientWidth-24) sc.scrollLeft=b-sc.clientWidth+24;
-}
   const page = document.getElementById(pageId);
   if(!page) return;
   const els = page.querySelectorAll('.r');
@@ -2559,8 +2567,21 @@ function goContact(){
 
   function slideImgSrc(i){
     const img = slides[i].querySelector('img');
-    return { src: img.currentSrc || img.src, alt: img.alt };
+    return { src: img.currentSrc || img.src, alt: img.alt, w: img.naturalWidth, h: img.naturalHeight };
   }
+
+  // Cap rendered size at the image's native pixels so it is never upscaled (crisp on Retina)
+  function capToNative(img, w, h){
+    if(!w || !h) return;
+    const dpr = window.devicePixelRatio || 1;
+    img.style.setProperty('--nw', Math.round(w / dpr) + 'px');
+    img.style.setProperty('--nh', Math.round(h / dpr) + 'px');
+  }
+  slides.forEach(s => {
+    const img = s.querySelector('img');
+    const apply = () => capToNative(img, img.naturalWidth, img.naturalHeight);
+    if(img.complete) apply(); else img.addEventListener('load', apply, { once: true });
+  });
 
   function openLightbox(i){
     lbIndex = i;
@@ -2577,6 +2598,7 @@ function goContact(){
   function updateLightbox(){
     const d = slideImgSrc(lbIndex);
     lbImg.src = d.src; lbImg.alt = d.alt;
+    capToNative(lbImg, d.w, d.h);
     lbCounter.textContent = (lbIndex + 1) + ' / ' + total;
     goTo(lbIndex);
   }

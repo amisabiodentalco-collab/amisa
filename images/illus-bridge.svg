@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340" role="img" aria-label="Illustration of a three-unit bridge over two prepared abutment teeth">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2e4be"/><stop offset=".5" stop-color="#d4af70"/><stop offset="1" stop-color="#a8844a"/></linearGradient>
+ <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2e4be" stop-opacity=".16"/><stop offset="1" stop-color="#d4af70" stop-opacity=".03"/></linearGradient>
+ <radialGradient id="glow" cx=".5" cy=".45" r=".55"><stop offset="0" stop-color="#d4af70" stop-opacity=".14"/><stop offset="1" stop-color="#d4af70" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#d4af70" stroke-opacity=".07" stroke-width=".6"/></pattern>
+</defs>
+<rect width="400" height="340" fill="url(#grid)"/><rect width="400" height="340" fill="url(#glow)"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path fill="url(#f)" stroke="url(#g)" stroke-width="2.2" d="M57.0,204 C55.0,153.60000000000002 62.0,116.64 72.36,105.44 C81.96000000000001,95.36 87.72,100.96000000000001 95.4,92 C101.16,86.4 103,94.24 105,99.84 C107,94.24 108.84,86.4 114.6,92 C122.28,100.96000000000001 128.04,95.36 137.64,105.44 C148.0,116.64 155.0,153.60000000000002 153.0,204 C141.48,215.2 68.52,215.2 57.0,204 Z"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M74.28,109.92 C87.72,125.6 97.32,125.6 105,105.44"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M105,105.44 C112.68,125.6 122.28,125.6 135.72,109.92"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M60.0,139.04 C85.8,148.0 124.2,148.0 150.0,139.04"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M60.0,165.92000000000002 C85.8,174.88000000000002 124.2,174.88000000000002 150.0,165.92000000000002"/>
+<path stroke="#d4af70" stroke-opacity=".35" stroke-width="1.1" stroke-dasharray="4 5" d="M71,212 L83,264 C95,274 115,274 127,264 L139,212"/>
+<path stroke="#d4af70" stroke-opacity=".3" stroke-width="1.1" d="M87,268 C91,304 99,322 105,328 C111,322 119,304 123,268"/>
+<path fill="url(#f)" stroke="url(#g)" stroke-width="2.2" d="M152.0,204 C150.0,153.60000000000002 157.0,116.64 167.36,105.44 C176.96,95.36 182.72,100.96000000000001 190.4,92 C196.16,86.4 198,94.24 200,99.84 C202,94.24 203.84,86.4 209.6,92 C217.28,100.96000000000001 223.04,95.36 232.64,105.44 C243.0,116.64 250.0,153.60000000000002 248.0,204 C236.48,215.2 163.52,215.2 152.0,204 Z"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M169.28,109.92 C182.72,125.6 192.32,125.6 200,105.44"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M200,105.44 C207.68,125.6 217.28,125.6 230.72,109.92"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M155.0,139.04 C180.8,148.0 219.2,148.0 245.0,139.04"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M155.0,165.92000000000002 C180.8,174.88000000000002 219.2,174.88000000000002 245.0,165.92000000000002"/>
+<path fill="url(#f)" stroke="url(#g)" stroke-width="2.2" d="M247.0,204 C245.0,153.60000000000002 252.0,116.64 262.36,105.44 C271.96,95.36 277.72,100.96000000000001 285.4,92 C291.16,86.4 293,94.24 295,99.84 C297,94.24 298.84,86.4 304.6,92 C312.28,100.96000000000001 318.04,95.36 327.64,105.44 C338.0,116.64 345.0,153.60000000000002 343.0,204 C331.48,215.2 258.52,215.2 247.0,204 Z"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M264.28,109.92 C277.72,125.6 287.32,125.6 295,105.44"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M295,105.44 C302.68,125.6 312.28,125.6 325.72,109.92"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M250.0,139.04 C275.8,148.0 314.2,148.0 340.0,139.04"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M250.0,165.92000000000002 C275.8,174.88000000000002 314.2,174.88000000000002 340.0,165.92000000000002"/>
+<path stroke="#d4af70" stroke-opacity=".35" stroke-width="1.1" stroke-dasharray="4 5" d="M261,212 L273,264 C285,274 305,274 317,264 L329,212"/>
+<path stroke="#d4af70" stroke-opacity=".3" stroke-width="1.1" d="M277,268 C281,304 289,322 295,328 C301,322 309,304 313,268"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M40,226 C80,214 130,214 160,226 C180,234 220,234 240,226 C270,214 320,214 360,226"/>
+<path fill="#d4af70" fill-opacity=".22" stroke="url(#g)" stroke-width="1.6" d="M150,134 h4 v20 h-4 z M246,134 h4 v20 h-4 z"/>
+<text x="170" y="262" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">PONTIC</text><text x="70" y="40" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">3-UNIT BRIDGE</text>
+</g>
+</svg>
