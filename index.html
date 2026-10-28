@@ -853,6 +853,8 @@ footer{
   .eyebrow-txt{color:#e8c989 !important;}
 }
 
+/* ══════════ 2026 PREMIUM REDESIGN ══════════ */
+
 /* Card title/text used by Partnership & Research cards */
 .svc-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--white);margin-bottom:10px;line-height:1.25;}
 .svc-text{font-size:15px;color:var(--gray);line-height:1.85;}
@@ -1201,63 +1203,237 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
 
 <!-- ══════════ HOME ══════════ -->
 <div class="page active" id="p-home">
-  <section class="hero">
-    <div class="hero-left">
-      <div class="hero-kicker">
+
+  <!-- CINEMATIC HERO -->
+  <section class="hx" aria-label="AmisA Biodental Co.">
+    <div class="hx-media" data-parallax="0.18" aria-hidden="true">
+      <picture>
+        <source srcset="images/video-poster.webp" type="image/webp">
+        <img src="images/video-poster.jpg" alt="" class="hx-img" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+    <div class="hx-shade" aria-hidden="true"></div>
+    <div class="hx-scan" aria-hidden="true"></div>
+    <div class="hx-inner">
+      <div class="hero-kicker hx-in" style="--d:.1s;">
         <div class="hero-kicker-dot"></div>
-        <span class="hero-kicker-txt">AmisA Partnership Program · Global Reach</span>
+        <span class="hero-kicker-txt">Vancouver, BC · Digital Dentistry · Global Reach</span>
       </div>
-
-      <h1 class="hero-h1">Become an<br><em>International AmisA Partner</em></h1>
-
-      <p class="hero-p">Join a growing Canadian digital dental company and build a flexible international partnership with long-term opportunities.</p>
-      <div class="hero-actions">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScLF0nUb8Y-DjR7BQvSsA3FcSOiQjnbCPt75s2p964djMRloA/viewform" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;"><span>Apply Now →</span></a>
-        <button class="btn btn-ghost" onclick="go('partnership')">Learn More</button>
+      <h1 class="hx-h1">
+        <span class="hx-line" style="--d:.2s;">Digital Precision.</span>
+        <span class="hx-line" style="--d:.38s;"><em class="gold-shine">Artistic Vision.</em></span>
+      </h1>
+      <p class="hx-p hx-in" style="--d:.55s;">CAD/CAM digital workflow support, business-to-business laboratory case coordination and premium continuing education for licensed dental professionals.</p>
+      <div class="hero-actions hx-in" style="--d:.7s;">
+        <a href="/lab" onclick="go('lab');return false;" class="btn btn-primary"><span>Submit a Laboratory Case →</span></a>
+        <a href="/education" onclick="go('education');return false;" class="btn btn-ghost">Explore Education</a>
+      </div>
+      <div class="hero-metrics hx-in" style="--d:.85s;">
+        <div class="hm"><span class="hm-num">1</span><span class="hm-label">Brand</span></div>
+        <div class="hm-sep"></div>
+        <div class="hm"><span class="hm-num">6</span><span class="hm-label">Strengths</span></div>
+        <div class="hm-sep"></div>
+        <div class="hm"><span class="hm-num">∞</span><span class="hm-label">Possibilities</span></div>
+        <div class="hm-sep"></div>
+        <div class="hm"><span class="hm-num">12</span><span class="hm-label">Instructional Hours</span></div>
       </div>
     </div>
-    <div class="hero-right">
-      <div class="pp-visual" style="width:100%;height:85%;aspect-ratio:unset;padding:0;">
-        <picture>
-          <source srcset="images/hero-cadcam.webp" type="image/webp">
-          <img src="images/hero-cadcam.png" alt="AmisA Digital Laboratory – CAD/CAM Digital Dentistry" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
-        </picture>
-      </div>
-    </div>
-    <div class="scroll-ind">
+    <div class="scroll-ind" aria-hidden="true">
       <div class="scroll-ind-line"></div>
       <span class="scroll-ind-txt">Scroll</span>
     </div>
   </section>
 
-  <!-- BRAND STATEMENT (secondary, preserves original site identity) -->
-  <section class="sec">
+  <!-- CAPABILITY MARQUEE -->
+  <div class="marquee" aria-label="AmisA capabilities">
+    <div class="marquee-track">
+      <span>CAD/CAM Design</span><i>✦</i><span>Intraoral Scanning</span><i>✦</i><span>Full-Contour Zirconia</span><i>✦</i><span>Lithium Disilicate</span><i>✦</i><span>Ceramic Veneers</span><i>✦</i><span>Implant Restorations</span><i>✦</i><span>Smile Design</span><i>✦</i><span>Continuing Education</span><i>✦</i>
+      <span aria-hidden="true">CAD/CAM Design</span><i aria-hidden="true">✦</i><span aria-hidden="true">Intraoral Scanning</span><i aria-hidden="true">✦</i><span aria-hidden="true">Full-Contour Zirconia</span><i aria-hidden="true">✦</i><span aria-hidden="true">Lithium Disilicate</span><i aria-hidden="true">✦</i><span aria-hidden="true">Ceramic Veneers</span><i aria-hidden="true">✦</i><span aria-hidden="true">Implant Restorations</span><i aria-hidden="true">✦</i><span aria-hidden="true">Smile Design</span><i aria-hidden="true">✦</i><span aria-hidden="true">Continuing Education</span><i aria-hidden="true">✦</i>
+    </div>
+  </div>
+
+  <!-- SERVICES (bento) -->
+  <section class="sec" id="services">
     <div class="sec-inner">
-      <div class="r" style="max-width:640px;">
-        <div class="hero-kicker" style="margin-bottom:22px;">
-          <div class="hero-kicker-dot"></div>
-          <span class="hero-kicker-txt">Vancouver, BC · Global Reach · Est. 2024</span>
+      <div class="r"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA Biodental Services</span></div></div>
+      <h2 class="sh r d1">What We <em>Offer</em></h2>
+      <div class="bento">
+        <a class="b-card b-wide r r-left" href="/lab" onclick="go('lab');return false;">
+          <div class="b-media"><picture><source srcset="images/rest-crowns.webp" type="image/webp"><img src="images/rest-crowns.jpg" alt="Ceramic and metal-ceramic crowns on a reflective black surface" loading="lazy" decoding="async"></picture></div>
+          <div class="b-body">
+            <div class="b-num">01</div>
+            <div class="svc-h">AmisA LAB tech</div>
+            <p class="svc-p">Digital workflow support and business-to-business laboratory case coordination — CAD/CAM file management, shade communication and production logistics through independent laboratory providers.</p>
+            <div class="svc-arrow">Explore <span>→</span></div>
+          </div>
+        </a>
+        <a class="b-card b-wide r r-right" href="/education" onclick="go('education');return false;">
+          <div class="b-media"><img src="images/lec-implant-session.jpg" alt="AmisA continuing education lecture on implant restorations" loading="lazy" decoding="async"></div>
+          <div class="b-body">
+            <div class="b-num">02</div>
+            <div class="svc-h">CE Education</div>
+            <p class="svc-p">Premium lectures in Persian — non-patient-based workshops, online &amp; in-person across BC and worldwide.</p>
+            <div class="svc-arrow">Explore <span>→</span></div>
+          </div>
+        </a>
+        <a class="b-card b-third r d1" href="/consultation" onclick="go('consultation');return false;">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="b-num">03</div>
+          <div class="svc-h">Laboratory Case Communication</div>
+          <p class="svc-p">Secure business-to-business communication for licensed dental professionals regarding laboratory prescriptions, digital files, shade information and case status. AmisA does not provide patient consultations, diagnosis or patient-specific treatment recommendations.</p>
+          <div class="svc-arrow">Explore <span>→</span></div>
+        </a>
+        <a class="b-card b-third r d2" href="/club" onclick="go('club');return false;">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div class="b-num">04</div>
+          <div class="svc-h">CLUB Membership</div>
+          <p class="svc-p">Join AmisA Club free — earn points, unlock Gold, Silver, Bronze privileges, travel vouchers &amp; more.</p>
+          <div class="svc-arrow">Explore <span>→</span></div>
+        </a>
+        <a class="b-card b-third r d3" href="/research" onclick="go('research');return false;">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+          <div class="b-num">05</div>
+          <div class="svc-h">Research</div>
+          <p class="svc-p">Supporting innovation and academic collaboration across digital dentistry, prosthodontics, dental materials and education.</p>
+          <div class="svc-arrow">Explore <span>→</span></div>
+        </a>
+        <a class="b-card b-full r d1" href="/products" onclick="go('products');return false;">
+          <div class="b-row">
+            <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+            <div>
+              <div class="svc-h">AmisA PRODUCTS</div>
+              <p class="svc-p">Premium dental products and professional supplies — sourced globally, delivered to your practice.</p>
+            </div>
+            <div class="svc-arrow">Explore <span>→</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL WORKFLOW -->
+  <section class="sec flow-sec">
+    <div class="sec-inner">
+      <div class="r" style="text-align:center;">
+        <div class="eyebrow" style="justify-content:center;"><div class="eyebrow-line"></div><span class="eyebrow-txt">Digital Workflow</span><div class="eyebrow-line"></div></div>
+        <h2 class="sh">From Scan to <em>Smile</em></h2>
+        <p class="sp" style="margin:0 auto;">A connected CAD/CAM pathway — your digital impression in, a precisely coordinated restoration out.</p>
+      </div>
+      <div class="flow r">
+        <div class="flow-line" aria-hidden="true"></div>
+        <div class="flow-step">
+          <div class="flow-ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 8h12l2 6v22a4 4 0 0 1-4 4h-8a4 4 0 0 1-4-4V14z"/><path d="M18 8V4h8v4"/><path d="M33 16c3 2 3 8 0 10M37 13c5 4 5 12 0 16"/></svg></div>
+          <div class="flow-n">Step 01</div>
+          <div class="flow-h">Intraoral Scan</div>
+          <p class="flow-p">Send STL / PLY files via iTero, Shining 3D, Medit, 3Shape or email.</p>
         </div>
-        <h2 class="sh" style="font-size:clamp(34px,4vw,52px);">Be Your <em>Best Self</em></h2>
-        <p class="sp" style="margin-bottom:28px;">At AmisA Biodental Co., we combine digital precision with artistic vision — supporting dental professionals through digital workflows, coordinated laboratory production and professional education.</p>
-        <div class="hero-actions" style="margin-bottom:36px;">
-          <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"><span>Explore Services</span></button>
-          <button class="btn btn-ghost" onclick="go('lab')">Submit a Laboratory Case →</button>
+        <div class="flow-step">
+          <div class="flow-ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="38" height="26" rx="2"/><path d="M17 42h14M24 34v8"/><path d="M17 27c0-7 3-12 7-12s7 5 7 12c-2-2-4-3-7-3s-5 1-7 3z"/></svg></div>
+          <div class="flow-n">Step 02</div>
+          <div class="flow-h">CAD Design</div>
+          <p class="flow-p">Restorations designed digitally with shade and case specifications.</p>
         </div>
-        <div class="hero-metrics">
-          <div class="hm"><span class="hm-num">1</span><span class="hm-label">Brand</span></div>
-          <div class="hm-sep"></div>
-          <div class="hm"><span class="hm-num">6</span><span class="hm-label">Strengths</span></div>
-          <div class="hm-sep"></div>
-          <div class="hm"><span class="hm-num">∞</span><span class="hm-label">Possibilities</span></div>
-          <div class="hm-sep"></div>
-          <div class="hm"><span class="hm-num">12</span><span class="hm-label">Instructional Hours</span></div>
+        <div class="flow-step">
+          <div class="flow-ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 4h12v8l-3 4h-6l-3-4z"/><path d="M24 16v8"/><path d="M17 31c0-4 3-7 7-7s7 3 7 7v3c0 2-1 4-3 4h-8c-2 0-3-2-3-4z"/><path d="M10 44h28"/></svg></div>
+          <div class="flow-n">Step 03</div>
+          <div class="flow-h">Precision Milling</div>
+          <p class="flow-p">Zirconia, lithium disilicate and veneers produced by qualified laboratory providers.</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 24l5 5 9-10"/></svg></div>
+          <div class="flow-n">Step 04</div>
+          <div class="flow-h">Quality &amp; Delivery</div>
+          <p class="flow-p">Quality control, case-status updates and coordinated international logistics.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="divider"></div>
+  <!-- RESTORATION SHOWCASE -->
+  <section class="sec showcase-sec">
+    <div class="sec-inner">
+      <div class="r"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Laboratory Craftsmanship</span></div>
+      <h2 class="sh">Restorations, <em>Refined</em></h2></div>
+      <div class="showcase">
+        <figure class="sc-card r r-scale d1"><picture><source srcset="images/rest-crowns.webp" type="image/webp"><img src="images/rest-crowns.jpg" alt="Full-contour crowns" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Crowns</span><b>Zirconia &amp; Lithium Disilicate</b></figcaption></figure>
+        <figure class="sc-card r r-scale d2"><picture><source srcset="images/rest-veneers.webp" type="image/webp"><img src="images/rest-veneers.jpg" alt="Ceramic veneers on an anterior arch" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Esthetics</span><b>Ultra-Thin Ceramic Veneers</b></figcaption></figure>
+        <figure class="sc-card r r-scale d3"><picture><source srcset="images/rest-implant.webp" type="image/webp"><img src="images/rest-implant.jpg" alt="Illustration of an implant-supported restoration" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Implants</span><b>Implant Restorations</b></figcaption></figure>
+        <figure class="sc-card r r-scale d4"><picture><source srcset="images/rest-bridge.webp" type="image/webp"><img src="images/rest-bridge.jpg" alt="Illustration of a three-unit bridge" loading="lazy" decoding="async"></picture><figcaption class="sc-cap"><span>Fixed Prosthetics</span><b>Bridges &amp; Inlays / Onlays</b></figcaption></figure>
+      </div>
+      <p class="sc-note r">Illustrative imagery. Clinical diagnosis, treatment planning and delivery remain the responsibility of the treating licensed professional.</p>
+    </div>
+  </section>
+
+  <!-- PROMOTIONAL FILM — ready for future AI-generated video.
+       To publish a film: upload e.g. videos/amisa-film.mp4 (H.264) and optionally videos/amisa-film.webm,
+       then fill data-src-mp4 / data-src-webm below. Add data-autoplay="true" for a muted ambient loop.
+       With no source (or if the file fails to load) the poster image is shown instead. -->
+  <section class="sec film-sec" id="amisa-film">
+    <div class="sec-inner">
+      <div class="r" style="text-align:center;">
+        <div class="eyebrow" style="justify-content:center;"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA Film</span><div class="eyebrow-line"></div></div>
+        <h2 class="sh">AmisA in <em>Motion</em></h2>
+      </div>
+      <div class="vid-frame no-video r r-scale" data-promo-video data-src-mp4="" data-src-webm="">
+        <picture class="vid-poster"><source srcset="images/video-poster.webp" type="image/webp"><img src="images/video-poster.jpg" alt="CAD/CAM milling of a ceramic crown in a digital dental laboratory" loading="lazy" decoding="async"></picture>
+        <video class="vid-el" playsinline muted loop preload="none" poster="images/video-poster.jpg" aria-label="AmisA Biodental Co. promotional film"></video>
+        <div class="pp-visual-corner tl" aria-hidden="true"></div>
+        <div class="pp-visual-corner br" aria-hidden="true"></div>
+        <div class="pp-visual-scanline" aria-hidden="true"></div>
+        <div class="vid-overlay">
+          <button class="vid-play" type="button" aria-label="Play the AmisA film"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
+          <div class="vid-title">Digital Dentistry · CAD/CAM · Global Collaboration</div>
+          <div class="vid-sub" data-vid-status>Cinematic film coming soon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE NEWS & EVENTS (Supabase, published-only) -->
+  <section class="sec live-sec" id="amisa-live-content" aria-label="Latest dental news and events">
+    <div class="sec-inner">
+      <div class="r" style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;">
+        <div>
+          <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Live from AmisA</span></div>
+          <h2 class="sh" style="margin-bottom:0;">Dental News &amp; <em>Events</em></h2>
+        </div>
+        <span class="live-badge"><i></i>Live</span>
+      </div>
+      <div class="live-grid">
+        <div class="live-panel r r-left">
+          <div class="live-panel-h"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/></svg><h3>Latest Dental News</h3></div>
+          <div class="feed-list" data-amisa-feed="news" data-limit="3" aria-live="polite" aria-busy="true"><div class="feed-skel"></div><div class="feed-skel"></div><div class="feed-skel"></div></div>
+          <a href="/news" onclick="go('news');return false;" class="live-more">All News →</a>
+        </div>
+        <div class="live-panel r r-right">
+          <div class="live-panel-h"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/><path d="M8 14h3v3H8z"/></svg><h3>Upcoming Events</h3></div>
+          <div class="feed-list" data-amisa-feed="events" data-limit="3" aria-live="polite" aria-busy="true"><div class="feed-skel"></div><div class="feed-skel"></div><div class="feed-skel"></div></div>
+          <a href="/events" onclick="go('events');return false;" class="live-more">All Events →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION HIGHLIGHT -->
+  <section class="sec edu-sec">
+    <div class="sec-inner edu-hl">
+      <div class="edu-collage" aria-hidden="false">
+        <figure class="ec ec-1 r r-left" data-parallax="0.05"><picture><source srcset="images/gal-session-veneer-workshop.webp" type="image/webp"><img src="images/gal-session-veneer-workshop.jpg" alt="AmisA veneer technique workshop" loading="lazy" decoding="async"></picture></figure>
+        <figure class="ec ec-2 r r-right d1" data-parallax="-0.06"><picture><source srcset="images/gal-session-endo-rehab.webp" type="image/webp"><img src="images/gal-session-endo-rehab.jpg" alt="AmisA lecture on restoring endodontically treated teeth" loading="lazy" decoding="async"></picture></figure>
+        <figure class="ec ec-3 r r-scale d2" data-parallax="0.03"><picture><source srcset="images/gal-session-audience.webp" type="image/webp"><img src="images/gal-session-audience.jpg" alt="Dental professionals attending an AmisA session" loading="lazy" decoding="async"></picture></figure>
+      </div>
+      <div class="r r-right">
+        <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA Education</span></div>
+        <h2 class="sh">Learning Beyond <em>the Chair</em></h2>
+        <p class="sp" style="margin-bottom:22px;">Non-patient-based lectures and workshops in Persian — restorative techniques, smile design, implant prosthetics, ceramic veneers and full-mouth rehabilitation, online and in person.</p>
+        <div class="edu-tags"><span>Smile Design</span><span>Implant Prosthetics</span><span>Ceramic Veneers</span><span>Digital Workflows</span></div>
+        <div class="hero-actions" style="margin:30px 0 0;">
+          <a href="/education" onclick="go('education');return false;" class="btn btn-primary"><span>Explore Education →</span></a>
+          <a href="/events" onclick="go('events');return false;" class="btn btn-ghost">Upcoming Events</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- PARTNERSHIP PREVIEW (full details live on the Partnership page) -->
   <section class="sec pp-prev-sec">
@@ -1289,64 +1465,27 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
     </div>
   </section>
 
-  <div class="divider"></div>
-
-  <!-- SERVICES -->
-  <section class="svc-section" id="services">
-    <div style="max-width:1120px;margin:0 auto;">
-      <div class="r"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">AmisA Biodental Services</span></div></div>
-      <h2 class="sh r d1">What We <em>Offer</em></h2>
-      <div class="svc-grid">
-        <div class="svc-card r d1" onclick="go('lab')">
-          <div class="svc-num">01</div>
-          <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="12" x2="15" y2="12"/></svg></div>
-          <div class="svc-h">AmisA LAB tech</div>
-          <p class="svc-p">Digital workflow support and business-to-business laboratory case coordination — CAD/CAM file management, shade communication and production logistics through independent laboratory providers.</p>
-          <div class="svc-arrow">Explore <span>→</span></div>
-        </div>
-        <div class="svc-card r d2" onclick="go('education')">
-          <div class="svc-num">02</div>
-          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-          <div class="svc-h">CE Education</div>
-          <p class="svc-p">Premium lectures in Persian — non-patient-based workshops, online &amp; in-person across BC and worldwide.</p>
-          <div class="svc-arrow">Explore <span>→</span></div>
-        </div>
-        <div class="svc-card r d3" onclick="go('club')">
-          <div class="svc-num">03</div>
-          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <div class="svc-h">CLUB Membership</div>
-          <p class="svc-p">Join AmisA Club free — earn points, unlock Gold, Silver, Bronze privileges, travel vouchers & more.</p>
-          <div class="svc-arrow">Explore <span>→</span></div>
-        </div>
-        <div class="svc-card r d1" onclick="go('consultation')">
-          <div class="svc-num">04</div>
-          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <div class="svc-h">Laboratory Case Communication</div>
-          <p class="svc-p">Secure business-to-business communication for licensed dental professionals regarding laboratory prescriptions, digital files, shade information and case status. AmisA does not provide patient consultations, diagnosis or patient-specific treatment recommendations.</p>
-          <div class="svc-arrow">Explore <span>→</span></div>
-        </div>
-        <div class="svc-card r d3" onclick="go('products')">
-          <div class="svc-num">05</div>
-          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
-          <div class="svc-h">AmisA PRODUCTS</div>
-          <p class="svc-p">Premium dental products and professional supplies — sourced globally, delivered to your practice.</p>
-          <div class="svc-arrow">Explore <span>→</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- TEAM -->
-  <section class="sec">
+  <!-- BRAND + FOUNDERS -->
+  <section class="sec brand-sec">
     <div class="sec-inner">
-      <div class="r"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Our Leadership</span></div></div>
+      <div class="brand-hl">
+        <div class="r r-left">
+          <div class="hero-kicker" style="margin-bottom:22px;">
+            <div class="hero-kicker-dot"></div>
+            <span class="hero-kicker-txt">Vancouver, BC · Global Reach · Est. 2024</span>
+          </div>
+          <h2 class="sh">Be Your <em>Best Self</em></h2>
+          <p class="sp">At AmisA Biodental Co., we combine digital precision with artistic vision — supporting dental professionals through digital workflows, coordinated laboratory production and professional education.</p>
+        </div>
+        <figure class="brand-photo r r-right"><img src="images/lec-team-logo.jpg" alt="AmisA Biodental Co. founders Amirhossein Sarbazi and Golsa Alavi" loading="lazy" decoding="async"></figure>
+      </div>
+
+      <div class="r" style="margin-top:72px;"><div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Our Leadership</span></div></div>
       <h2 class="sh r d1">Meet the <em>Founders</em></h2>
       <div class="team-grid r d2">
         <div class="team-card">
           <div class="team-name">Amirhossein Sarbazi</div>
-          <div class="team-role">Founder & CEO</div>
+          <div class="team-role">Founder &amp; CEO</div>
           <p class="team-bio">Dental educator and business founder with international academic and professional experience.</p>
         </div>
         <div class="team-card">
@@ -1366,7 +1505,6 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
         <p style="font-size:14px;color:rgba(212,175,112,0.6);line-height:1.95;font-style:italic;">May this small gift carry our appreciation for your dedication to creating healthy and confident smiles.</p>
         <div style="width:40px;height:1px;background:var(--gold);margin:24px auto 0;opacity:0.4;"></div>
       </div>
-
     </div>
   </section>
 
@@ -1411,31 +1549,6 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
   </section>
 
   <div class="reg-notice">AmisA Biodental Co. currently provides non-clinical education, digital workflow support, and business-to-business laboratory case coordination for licensed dental professionals. AmisA does not provide patient care, diagnosis, clinical treatment planning, dental procedures, or other restricted clinical activities in British Columbia.</div>
-
-  <!-- LIVE NEWS & EVENTS (Supabase, published-only) -->
-  <section class="sec live-sec" id="amisa-live-content" aria-label="Latest dental news and events">
-    <div class="sec-inner">
-      <div class="r" style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;">
-        <div>
-          <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-txt">Live from AmisA</span></div>
-          <h2 class="sh" style="margin-bottom:0;">Dental News &amp; <em>Events</em></h2>
-        </div>
-        <span class="live-badge"><i></i>Live</span>
-      </div>
-      <div class="live-grid">
-        <div class="live-panel r r-left">
-          <div class="live-panel-h"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/></svg><h3>Latest Dental News</h3></div>
-          <div class="feed-list" data-amisa-feed="news" data-limit="3" aria-live="polite" aria-busy="true"><div class="feed-skel"></div><div class="feed-skel"></div><div class="feed-skel"></div></div>
-          <a href="/news" onclick="go('news');return false;" class="live-more">All News →</a>
-        </div>
-        <div class="live-panel r r-right">
-          <div class="live-panel-h"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/><path d="M8 14h3v3H8z"/></svg><h3>Upcoming Events</h3></div>
-          <div class="feed-list" data-amisa-feed="events" data-limit="3" aria-live="polite" aria-busy="true"><div class="feed-skel"></div><div class="feed-skel"></div><div class="feed-skel"></div></div>
-          <a href="/events" onclick="go('events');return false;" class="live-more">All Events →</a>
-        </div>
-      </div>
-    </div>
-  </section>
   <footer><div class="ftr-l">AmisA Biodental Co.</div><div class="ftr-r">© 2026 — Be Your Best Self · West Vancouver, BC</div></footer>
 </div>
 
@@ -2244,6 +2357,7 @@ function go(id, skipPush){
   if(!target) return;
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(a=>a.classList.remove('active'));
+  document.querySelectorAll('video').forEach(v=>{ if(!v.paused) v.pause(); });
   target.classList.add('active');
   const n=document.getElementById('n-'+id);
   if(n) n.classList.add('active');
@@ -2477,6 +2591,91 @@ function goContact(){
     lbTouching = false;
     if(Math.abs(lbTouchDeltaX) > 40){ lbTouchDeltaX < 0 ? lbNextFn() : lbPrevFn(); }
   });
+})();
+
+/* ══════════ PROMOTIONAL VIDEO (poster fallback until a film is supplied) ══════════ */
+(function(){
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = !!(navigator.connection && navigator.connection.saveData);
+
+  document.querySelectorAll('[data-promo-video]').forEach(frame => {
+    const video = frame.querySelector('video');
+    const status = frame.querySelector('[data-vid-status]');
+    const playBtn = frame.querySelector('.vid-play');
+    const sources = [
+      { src: (frame.dataset.srcWebm || '').trim(), type: 'video/webm' },
+      { src: (frame.dataset.srcMp4 || '').trim(), type: 'video/mp4' }
+    ].filter(s => s.src);
+    if(!video || !sources.length) return; // poster-only mode
+
+    frame.classList.remove('no-video');
+    if(status) status.textContent = 'Watch the film';
+    let loaded = false, failed = 0;
+
+    function fail(){
+      if(++failed < sources.length) return;
+      frame.classList.remove('is-playing');
+      frame.classList.add('no-video');
+      if(status) status.textContent = 'Film unavailable — showing preview';
+    }
+    function load(){
+      if(loaded) return;
+      loaded = true;
+      sources.forEach(s => {
+        const el = document.createElement('source');
+        el.src = s.src; el.type = s.type;
+        el.addEventListener('error', fail);
+        video.append(el);
+      });
+      video.load();
+    }
+    video.addEventListener('playing', () => frame.classList.add('is-playing'));
+
+    playBtn && playBtn.addEventListener('click', () => {
+      load();
+      video.controls = true;
+      video.muted = false;
+      video.play().catch(() => { video.muted = true; video.play().catch(() => {}); });
+    });
+
+    // Optional muted ambient loop while in view
+    if(frame.dataset.autoplay === 'true' && !reduceMotion && !saveData && 'IntersectionObserver' in window){
+      new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if(video.controls) return; // user took over
+          if(e.isIntersecting){ load(); video.muted = true; video.play().catch(() => {}); }
+          else if(!video.paused){ video.pause(); }
+        });
+      }, { threshold: 0.35 }).observe(frame);
+    }
+  });
+})();
+
+/* ══════════ PARALLAX (desktop, motion-safe) ══════════ */
+(function(){
+  const motionOK = window.matchMedia('(prefers-reduced-motion: no-preference)');
+  const wide = window.matchMedia('(min-width: 769px)');
+  let ticking = false;
+  function update(){
+    ticking = false;
+    const page = document.querySelector('.page.active');
+    if(!page) return;
+    const enabled = motionOK.matches && wide.matches;
+    const vh = window.innerHeight;
+    page.querySelectorAll('[data-parallax]').forEach(el => {
+      if(!enabled){ el.style.translate = ''; return; }
+      const r = el.getBoundingClientRect();
+      if(r.bottom < -200 || r.top > vh + 200) return;
+      const offset = (r.top + r.height / 2 - vh / 2) * -parseFloat(el.dataset.parallax || 0);
+      el.style.translate = '0 ' + offset.toFixed(1) + 'px';
+    });
+  }
+  function request(){ if(!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', request, { passive: true });
+  window.addEventListener('resize', request);
+  window.addEventListener('popstate', request);
+  document.addEventListener('click', () => setTimeout(request, 50));
+  request();
 })();
 
 </script>
