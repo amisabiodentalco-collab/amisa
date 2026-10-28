@@ -586,8 +586,15 @@ footer{
   .logo-main{font-size:15.5px;}
   .logo img{height:36px;}
   nav.scrolled{height:56px;}
-  .nav-scroll{margin:0 6px;gap:0;}
-  .nav-item{min-width:52px;font-size:8.5px;padding:9px 7px 7px;}
+  .logo{gap:8px;flex-shrink:0;}
+  .logo-full{display:none;}
+  .nav-scroll{
+    margin:0 4px;gap:0;min-width:0;scroll-snap-type:x proximity;scroll-padding:0 8px;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8px,#000 calc(100% - 22px),transparent 100%);
+            mask-image:linear-gradient(90deg,transparent 0,#000 8px,#000 calc(100% - 22px),transparent 100%);
+  }
+  .nav-item{min-width:54px;font-size:8.5px;letter-spacing:0.05em;padding:9px 6px 7px;scroll-snap-align:start;}
+  #menu-btn{margin-left:2px;}
   .nav-item svg{width:16px;height:16px;}
   .nav-cta{font-size:9px;padding:9px 13px;letter-spacing:0.1em;}
   #menu-panel{padding-top:84px;width:280px;}
@@ -646,6 +653,10 @@ footer{
 
 /* Tablet */
 @media (max-width:1024px) and (min-width:769px){
+@media (max-width:380px){
+  .logo-text{display:none;}
+}
+
   .hero{gap:32px;grid-template-columns:1fr 0.9fr!important;}
   .hero-h1{font-size:clamp(44px,6vw,68px)!important;}
   .svc-grid{grid-template-columns:repeat(2,1fr)!important;}
@@ -1161,7 +1172,7 @@ nav{padding-left:max(5%,env(safe-area-inset-left));padding-right:max(5%,env(safe
   <a class="logo" onclick="go('home');return false;" href="#">
     <img src="images/logo.png" alt="AmisA">
     <div class="logo-text">
-      <span class="logo-main">AmisA Biodental Co.</span>
+      <span class="logo-main">AmisA<span class="logo-full"> Biodental Co.</span></span>
       <span class="logo-sub">Be Your Best Self</span>
     </div>
   </a>
@@ -2360,7 +2371,7 @@ function go(id, skipPush){
   document.querySelectorAll('video').forEach(v=>{ if(!v.paused) v.pause(); });
   target.classList.add('active');
   const n=document.getElementById('n-'+id);
-  if(n) n.classList.add('active');
+  if(n){ n.classList.add('active'); revealNavItem(n); }
   window.scrollTo({top:0,behavior:'instant'});
   initReveals('p-'+id);
   if(!skipPush){
@@ -2379,6 +2390,13 @@ window.addEventListener('popstate', ()=>{ go(resolvePathToPage(), true); });
 
 // ── Reveal on scroll ──
 function initReveals(pageId){
+function revealNavItem(n){
+  const sc=document.getElementById('nav-scroll');
+  if(!sc || sc.scrollWidth<=sc.clientWidth) return;
+  const a=n.offsetLeft-sc.offsetLeft, b=a+n.offsetWidth;
+  if(a<sc.scrollLeft+8) sc.scrollLeft=a-8;
+  else if(b>sc.scrollLeft+sc.clientWidth-24) sc.scrollLeft=b-sc.clientWidth+24;
+}
   const page = document.getElementById(pageId);
   if(!page) return;
   const els = page.querySelectorAll('.r');
