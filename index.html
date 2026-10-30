@@ -35,11 +35,12 @@ body{
 }
 html{overflow-x:hidden;width:100%;}
 .page{background:var(--navy);}
-#p-education{background:#122018;--gold:#D4AF37;--gold2:#E1C15A;}
-#p-education .sec{background:#15251C;}
-#p-education .callout-box{background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border-color:rgba(212,175,55,0.25);}
-#p-education .topic-pill{border-left-color:rgba(212,175,55,0.35);background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);}
-#p-education .topic-pill:hover{background:rgba(32,51,40,0.65);color:var(--white);}
+/* Education follows the same black-and-champagne palette as every other page. */
+#p-education{background:var(--navy);--gold:#d4af70;--gold2:#e8d5a3;}
+#p-education .sec{background:var(--navy2);}
+#p-education .callout-box{background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);border-color:rgba(212,175,112,0.25);}
+#p-education .topic-pill{border-left-color:rgba(212,175,112,0.35);background:rgba(255,255,255,0.02);backdrop-filter:blur(8px);}
+#p-education .topic-pill:hover{background:rgba(212,175,112,0.12);color:var(--white);}
 
 /* ── AMBIENT CANVAS ── */
 #ambient{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0.28;}
