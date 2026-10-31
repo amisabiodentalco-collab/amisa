@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340" role="img" aria-label="Illustration of an implant-supported crown with abutment and fixture">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2e4be"/><stop offset=".5" stop-color="#d4af70"/><stop offset="1" stop-color="#a8844a"/></linearGradient>
+ <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2e4be" stop-opacity=".16"/><stop offset="1" stop-color="#d4af70" stop-opacity=".03"/></linearGradient>
+ <radialGradient id="glow" cx=".5" cy=".45" r=".55"><stop offset="0" stop-color="#d4af70" stop-opacity=".14"/><stop offset="1" stop-color="#d4af70" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#d4af70" stroke-opacity=".07" stroke-width=".6"/></pattern>
+</defs>
+<rect width="400" height="340" fill="url(#grid)"/><rect width="400" height="340" fill="url(#glow)"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path fill="url(#f)" stroke="url(#g)" stroke-width="2.2" d="M125.0,164 C123.0,117.2 130.0,82.88 149.0,72.48 C164.0,63.12 173.0,68.32 185.0,60 C194.0,54.8 198,62.08 200,67.28 C202,62.08 206.0,54.8 215.0,60 C227.0,68.32 236.0,63.12 251.0,72.48 C270.0,82.88 277.0,117.2 275.0,164 C257.0,174.4 143.0,174.4 125.0,164 Z"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M152.0,76.64 C173.0,91.2 188.0,91.2 200,72.48"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M200,72.48 C212.0,91.2 227.0,91.2 248.0,76.64"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M128.0,103.68 C170.0,112.0 230.0,112.0 272.0,103.68"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M128.0,128.64 C170.0,136.95999999999998 230.0,136.95999999999998 272.0,128.64"/>
+<path stroke="url(#g)" stroke-width="2.2" d="M186,170 L188,200 H212 L214,170"/>
+<path stroke="url(#g)" stroke-width="2.2" d="M176,204 H224 L217,300 C215,312 185,312 183,300 Z"/>
+<path stroke="url(#g)" stroke-width="1.5" d="M180.0,214 L220.0,220"/>
+<path stroke="url(#g)" stroke-width="1.5" d="M179.9,226 L220.1,232"/>
+<path stroke="url(#g)" stroke-width="1.5" d="M179.8,238 L220.2,244"/>
+<path stroke="url(#g)" stroke-width="1.5" d="M179.8,250 L220.2,256"/>
+<path stroke="url(#g)" stroke-width="1.5" d="M179.7,262 L220.3,268"/>
+<path stroke="url(#g)" stroke-width="1.5" d="M179.6,274 L220.4,280"/>
+<path stroke="url(#g)" stroke-width="1.5" d="M179.5,286 L220.5,292"/>
+<path stroke="url(#g)" stroke-width="1.5" d="M179.4,298 L220.6,304"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M200,200 V306" stroke-dasharray="3 5"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M96,196 C140,184 160,188 176,198 M224,198 C240,188 260,184 304,196"/>
+<path stroke="#d4af70" stroke-opacity=".12" stroke-width="1" d="M100,214 L118,232 M100,244 L130,274 M100,276 L124,300 M276,212 L300,236 M270,240 L300,270 M282,282 L300,300 M120,210 L150,240 M250,212 L280,242"/>
+<text x="40" y="200" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">BONE</text><text x="316" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">CROWN</text><text x="316" y="186" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">ABUTMENT</text><text x="316" y="262" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">FIXTURE</text>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M310,112.0 H281.0 M310,182 H218 M310,258 H222"/></g>
+</svg>

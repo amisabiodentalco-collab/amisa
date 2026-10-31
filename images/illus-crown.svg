@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="400" height="340" role="img" aria-label="Illustration of a full-contour crown seated on a prepared tooth">
+<defs>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2e4be"/><stop offset=".5" stop-color="#d4af70"/><stop offset="1" stop-color="#a8844a"/></linearGradient>
+ <linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2e4be" stop-opacity=".16"/><stop offset="1" stop-color="#d4af70" stop-opacity=".03"/></linearGradient>
+ <radialGradient id="glow" cx=".5" cy=".45" r=".55"><stop offset="0" stop-color="#d4af70" stop-opacity=".14"/><stop offset="1" stop-color="#d4af70" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#d4af70" stroke-opacity=".07" stroke-width=".6"/></pattern>
+</defs>
+<rect width="400" height="340" fill="url(#grid)"/><rect width="400" height="340" fill="url(#glow)"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path fill="url(#f)" stroke="url(#g)" stroke-width="2.2" d="M115.0,210 C113.0,147.9 120.0,102.36 142.2,88.56 C159.2,76.14 169.4,83.04 183.0,72 C193.2,65.1 198,74.76 200,81.66 C202,74.76 206.8,65.1 217.0,72 C230.6,83.04 240.8,76.14 257.8,88.56 C280.0,102.36 287.0,147.9 285.0,210 C264.6,223.8 135.4,223.8 115.0,210 Z"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M145.6,94.08 C169.4,113.4 186.4,113.4 200,88.56"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M200,88.56 C213.6,113.4 230.6,113.4 254.4,94.08"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M118.0,129.96 C166.0,141.0 234.0,141.0 282.0,129.96"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M118.0,163.07999999999998 C166.0,174.11999999999998 234.0,174.11999999999998 282.0,163.07999999999998"/>
+<path stroke="#d4af70" stroke-opacity=".35" stroke-width="1.1" stroke-dasharray="4 5" d="M129.0,218 L143.0,282 C170,302 230,302 257.0,282 L271.0,218"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M109.0,213 C160,232 240,232 291.0,213"/>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M318,72 H330 M318,210 H330 M324,72 V210"/>
+<text x="336" y="144.0" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">CAD</text>
+<text x="40" y="226" font-family="Helvetica, Arial, sans-serif" font-size="9" letter-spacing="2.2" fill="#d4af70" fill-opacity=".7" stroke="none">MARGIN</text>
+<path stroke="#d4af70" stroke-opacity=".45" stroke-width="1.1" d="M86,222 L119.0,216"/></g>
+</svg>
