@@ -27,6 +27,23 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
+      - name: Configure secure upload signing
+        env:
+          KEYSTORE_B64: ${{ secrets.AMISA_KEYSTORE_B64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.AMISA_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.AMISA_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.AMISA_KEY_PASSWORD }}
+        run: |
+          if [ -z "$KEYSTORE_B64" ] || [ -z "$KEYSTORE_PASSWORD" ] || [ -z "$KEY_ALIAS" ] || [ -z "$KEY_PASSWORD" ]; then
+            echo "::error::Android upload signing secrets are missing. Do not publish an unsigned bundle."
+            exit 1
+          fi
+          printf '%s' "$KEYSTORE_B64" | base64 --decode > "$RUNNER_TEMP/amisa-upload.jks"
+          chmod 600 "$RUNNER_TEMP/amisa-upload.jks"
+          echo "AMISA_KEYSTORE_PATH=$RUNNER_TEMP/amisa-upload.jks" >> "$GITHUB_ENV"
+          echo "AMISA_KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD" >> "$GITHUB_ENV"
+          echo "AMISA_KEY_ALIAS=$KEY_ALIAS" >> "$GITHUB_ENV"
+          echo "AMISA_KEY_PASSWORD=$KEY_PASSWORD" >> "$GITHUB_ENV"
       - name: Build release bundle
         run: |
           set -o pipefail
@@ -41,6 +58,9 @@ jobs:
             const log = fs.existsSync(path) ? fs.readFileSync(path, 'utf8').slice(-18000) : 'Build log unavailable; failure occurred before Gradle step.';
             const body = 'Automatic diagnostic from run ' + context.runId + '\\n\\n' + '\`\`\`text\\n' + log.replaceAll('\\`\\`\\`', '---') + '\\n\`\`\`';
             await github.rest.issues.create({owner:context.repo.owner,repo:context.repo.repo,title:'AmisA Android build failure - run '+context.runId,body,labels:[]});
+      - name: Remove temporary signing key
+        if: always()
+        run: rm -f "$RUNNER_TEMP/amisa-upload.jks"
       - name: Upload AAB artifact (unsigned unless signing secrets configured)
         uses: actions/upload-artifact@v4
         with:
