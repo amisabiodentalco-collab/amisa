@@ -1,0 +1,29 @@
+name: AmisA Hub Android AAB
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/amisa-hub-android-release]
+    paths: ['android-hub/**', '.github/workflows/amisa-hub-android.yml']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: android-hub
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Build release bundle
+        run: gradle :app:bundleRelease --no-daemon
+      - name: Upload AAB artifact (unsigned unless signing secrets configured)
+        uses: actions/upload-artifact@v4
+        with:
+          name: amisa-hub-android-aab
+          path: android-hub/app/build/outputs/bundle/release/*.aab
+          retention-days: 7
