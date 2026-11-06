@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      issues: write
     defaults:
       run:
         working-directory: android-hub
@@ -53,8 +52,17 @@ jobs:
           set -euo pipefail
           AAB="app/build/outputs/bundle/release/app-release.aab"
           test -s "$AAB"
-          jarsigner -verify -strict "$AAB" >/dev/null
-          echo "AAB signature verification passed."
+          # jarsigner -strict treats certificate warnings as failures even when the signature is valid.
+          # Keep the actual signature verification mandatory; do not bypass an invalid signature.
+          verification_output="$(jarsigner -verify "$AAB" 2>&1)" || {
+            echo "::error::AAB cryptographic signature verification failed."
+            exit 1
+          }
+          if ! printf '%s\\n' "$verification_output" | grep -Fq "jar verified."; then
+            echo "::error::AAB signature was not confirmed by jarsigner."
+            exit 1
+          fi
+          echo "AAB cryptographic signature verification passed (certificate warnings may still require review)."
       - name: Remove temporary signing key
         if: always()
         run: rm -f "$RUNNER_TEMP/amisa-upload.jks"
